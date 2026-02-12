@@ -5,57 +5,60 @@ import { Button } from './ui/button';
 
 const chatOptions = [
   {
-    id: 'location',
-    label: 'Location & Address',
+    id: "location",
+    label: "Location & Address",
     icon: MapPin,
     response: {
-      text: 'We are located at:',
-      details: 'Mananthavady, Valliyoorkkavu Road, Near Vaderi Siva Temple, Opp. Joy Palace',
+      text: "We are located at:",
+      details:
+        "3rd Floor, Zealand Tower, M. M 23/367, Valliyoorkaav Road, near Vaderi Shiva Temple Road, Mananthavady, Kerala 670645",
       action: {
-        type: 'link',
-        label: 'Open in Google Maps',
-        url: 'https://maps.google.com/?q=Mananthavady+Valliyoorkkavu+Road+Near+Vaderi+Siva+Temple'
-      }
-    }
+        type: "link",
+        label: "Open in Google Maps",
+        url: "https://maps.google.com/?q=Mananthavady+Valliyoorkkavu+Road+Near+Vaderi+Siva+Temple",
+      },
+    },
   },
   {
-    id: 'timing',
-    label: 'Working Hours',
+    id: "timing",
+    label: "Working Hours",
     icon: Clock,
     response: {
-      text: 'Our working hours are:',
-      details: 'Monday to Friday: 9:30 AM - 4:30 PM\nSaturday: 9:30 AM - 1:00 PM\nSunday: Closed',
-      action: null
-    }
+      text: "Our working hours are:",
+      details:
+        "Monday to Friday: 9:30 AM - 4:30 PM\nSaturday: 9:30 AM - 1:00 PM\nSunday: Closed",
+      action: null,
+    },
   },
   {
-    id: 'contact',
-    label: 'Contact Numbers',
+    id: "contact",
+    label: "Contact Numbers",
     icon: Phone,
     response: {
-      text: 'You can reach us at:',
-      details: 'Phone 1: +91 9061 64 91 01\nPhone 2: +91 7907 56 13 69',
+      text: "You can reach us at:",
+      details: "Phone 1: +91 9061 64 91 01\nPhone 2: +91 7907 56 13 69",
       action: {
-        type: 'call',
-        label: 'Call Now',
-        url: 'tel:+919061649101'
-      }
-    }
+        type: "call",
+        label: "Call Now",
+        url: "tel:+919061649101",
+      },
+    },
   },
   {
-    id: 'booking',
-    label: 'Book Consultation',
+    id: "booking",
+    label: "Book Consultation",
     icon: Calendar,
     response: {
-      text: 'To book a consultation:',
-      details: 'Please contact us via WhatsApp or phone to schedule your appointment. Advance booking is recommended.',
+      text: "To book a consultation:",
+      details:
+        "Please contact us via WhatsApp or phone to schedule your appointment. Advance booking is recommended.",
       action: {
-        type: 'whatsapp',
-        label: 'Book via WhatsApp',
-        url: 'https://wa.me/919061649101?text=Hello%2C%20I%20would%20like%20to%20book%20a%20consultation%20at%20Adhiveda.'
-      }
-    }
-  }
+        type: "whatsapp",
+        label: "Book via WhatsApp",
+        url: "https://wa.me/919061649101?text=Hello%2C%20I%20would%20like%20to%20book%20a%20consultation%20at%20Adhiveda.",
+      },
+    },
+  },
 ];
 
 export const Chatbot = () => {

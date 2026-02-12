@@ -51,12 +51,13 @@ const CONTACT = {
   phone1: "+91 9061 64 91 01",
   phone2: "+91 7907 56 13 69",
   whatsapp: "919061649101",
-  location: "Mananthavady, Valliyoorkkavu Road, Near Vaderi Siva Temple, Opp. Joy Palace",
+  location:
+    "3rd Floor, Zealand Tower, M. M 23/367, Valliyoorkaav Road, near Vaderi Shiva Temple Road, Mananthavady, Kerala 670645",
   social: {
     youtube: "https://www.youtube.com/@vishnumayalayam3496",
     instagram: "https://www.instagram.com/paymooladevasthanam/",
-    facebook: "https://www.facebook.com/profile.php?id=61573408071448"
-  }
+    facebook: "https://www.facebook.com/profile.php?id=61573408071448",
+  },
 };
 
 // Translations
@@ -417,7 +418,7 @@ const HeroSection = () => {
   const { isDark } = useTheme();
 
   return (
-    <section id="hero" data-testid="hero-section" className={`min-h-screen flex items-center relative pt-20 overflow-hidden ${isDark ? 'bg-cosmic' : 'bg-cream'}`}>
+    <section id="hero" data-testid="hero-section" className={`min-h-screen flex items-center relative pt-5 overflow-hidden ${isDark ? 'bg-cosmic' : 'bg-cream'}`}>
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className={`absolute top-20 right-0 w-96 h-96 rounded-full blur-3xl ${isDark ? 'bg-gold/5' : 'bg-gold/10'}`} />
@@ -431,7 +432,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center lg:text-left order-2 lg:order-1"
+            className="text-center lg:text-left order-1 lg:order-1"
           >
             {/* Foundation Logo Badge */}
             <motion.div
@@ -497,7 +498,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex justify-center order-1 lg:order-2"
+            className="flex justify-center order-2 lg:order-2"
           >
             <div className="relative">
               {/* Glow Effect */}
@@ -539,7 +540,7 @@ const FounderSection = () => {
   const { isDark } = useTheme();
 
   return (
-    <section id="founder" data-testid="founder-section" className={`py-20 md:py-28 relative overflow-hidden ${isDark ? 'bg-cosmic-dark' : 'bg-white'}`}>
+    <section id="founder" data-testid="founder-section" className={`py-8 md:py-8 relative overflow-hidden ${isDark ? 'bg-cosmic-dark' : 'bg-white'}`}>
       <div className="absolute inset-0 opacity-5">
         <div className="lotus-pattern absolute inset-0" />
       </div>
@@ -640,7 +641,7 @@ const AboutSection = () => {
   const { isDark } = useTheme();
   
   return (
-    <section id="about" data-testid="about-section" className={`py-20 md:py-28 relative ${isDark ? 'bg-cosmic' : 'bg-cream'}`}>
+    <section id="about" data-testid="about-section" className={`py-3 md:py-8 relative ${isDark ? 'bg-cosmic' : 'bg-cream'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -715,7 +716,7 @@ const ServicesSection = () => {
   const { isDark } = useTheme();
 
   return (
-    <section id="services" data-testid="services-section" className={`py-20 md:py-28 ${isDark ? 'bg-cosmic-dark' : 'bg-white'}`}>
+    <section id="services" data-testid="services-section" className={`py-3 md:py-8 ${isDark ? 'bg-cosmic-dark' : 'bg-white'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -784,7 +785,7 @@ const GallerySection = () => {
   const { isDark } = useTheme();
 
   return (
-    <section id="gallery" data-testid="gallery-section" className={`py-20 md:py-28 ${isDark ? 'bg-cosmic' : 'bg-cream'}`}>
+    <section id="gallery" data-testid="gallery-section" className={`py-3 md:py-8 ${isDark ? 'bg-cosmic' : 'bg-cream'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -829,7 +830,7 @@ const ContactSection = () => {
   const { isDark } = useTheme();
 
   return (
-    <section id="contact" data-testid="contact-section" className={`py-20 md:py-28 ${isDark ? 'bg-cosmic-dark' : 'bg-white'}`}>
+    <section id="contact" data-testid="contact-section" className={`py-3 md:py-8 ${isDark ? 'bg-cosmic-dark' : 'bg-white'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -906,7 +907,7 @@ const Footer = () => {
   const hrefs = ["#hero", "#founder", "#about", "#services", "#gallery", "#contact"];
 
   return (
-    <footer data-testid="footer" className={`py-16 border-t border-gold/20 ${isDark ? 'bg-cosmic' : 'bg-gradient-to-b from-cream to-cream-dark'}`}>
+    <footer data-testid="footer" className={`py-12 border-t border-gold/20 ${isDark ? 'bg-cosmic' : 'bg-gradient-to-b from-cream to-cream-dark'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="lg:col-span-2">
