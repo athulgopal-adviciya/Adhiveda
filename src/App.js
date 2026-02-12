@@ -52,7 +52,7 @@ const CONTACT = {
   phone2: "+91 7907 56 13 69",
   whatsapp: "919061649101",
   location:
-    "3rd Floor, Zealand Tower, M. M 23/367, Valliyoorkaav Road, near Vaderi Shiva Temple Road, Mananthavady, Kerala 670645",
+    "Mananthavady, Valliyoorkkavu Road, Near Vaderi Siva Temple, Opp. Joy Palace",
   social: {
     youtube: "https://www.youtube.com/@vishnumayalayam3496",
     instagram: "https://www.instagram.com/paymooladevasthanam/",
@@ -830,7 +830,11 @@ const ContactSection = () => {
   const { isDark } = useTheme();
 
   return (
-    <section id="contact" data-testid="contact-section" className={`py-3 md:py-8 ${isDark ? 'bg-cosmic-dark' : 'bg-white'}`}>
+    <section
+      id="contact"
+      data-testid="contact-section"
+      className={`py-3 md:py-8 ${isDark ? "bg-cosmic-dark" : "bg-white"}`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -838,8 +842,12 @@ const ContactSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-gold font-manrope text-sm uppercase tracking-widest">{t.contact.label}</span>
-          <h2 className={`font-cormorant text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 section-title ${isDark ? 'text-cream' : 'text-saffron'}`}>
+          <span className="text-gold font-manrope text-sm uppercase tracking-widest">
+            {t.contact.label}
+          </span>
+          <h2
+            className={`font-cormorant text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 section-title ${isDark ? "text-cream" : "text-saffron"}`}
+          >
             {t.contact.title}
           </h2>
         </motion.div>
@@ -852,20 +860,52 @@ const ContactSection = () => {
             className="space-y-6"
           >
             {[
-              { icon: MapPin, title: t.contact.location, content: CONTACT.location, action: { label: t.contact.mapLink, url: "https://maps.google.com/?q=Mananthavady+Valliyoorkkavu+Road+Near+Vaderi+Siva+Temple" } },
-              { icon: Phone, title: t.contact.phone, content: `${CONTACT.phone1}\n${CONTACT.phone2}` },
-              { icon: Clock, title: t.contact.hours, content: t.contact.hoursList.join('\n') }
+              {
+                icon: MapPin,
+                title: t.contact.location,
+                content: CONTACT.location,
+                action: {
+                  label: t.contact.mapLink,
+                  url: "https://maps.app.goo.gl/DHQ6z1Vt7Tc4ztii8",
+                },
+              },
+              {
+                icon: Phone,
+                title: t.contact.phone,
+                content: `${CONTACT.phone1}\n${CONTACT.phone2}`,
+              },
+              {
+                icon: Clock,
+                title: t.contact.hours,
+                content: t.contact.hoursList.join("\n"),
+              },
             ].map((item, index) => (
-              <div key={index} className={`p-6 rounded-2xl border border-gold/20 shadow-sm ${isDark ? 'bg-cosmic' : 'bg-cream'}`}>
+              <div
+                key={index}
+                className={`p-6 rounded-2xl border border-gold/20 shadow-sm ${isDark ? "bg-cosmic" : "bg-cream"}`}
+              >
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
                     <item.icon className="w-6 h-6 text-gold" />
                   </div>
                   <div>
-                    <h3 className={`font-cormorant text-xl font-semibold mb-2 ${isDark ? 'text-cream' : 'text-saffron'}`}>{item.title}</h3>
-                    <p className={`font-manrope whitespace-pre-line ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>{item.content}</p>
+                    <h3
+                      className={`font-cormorant text-xl font-semibold mb-2 ${isDark ? "text-cream" : "text-saffron"}`}
+                    >
+                      {item.title}
+                    </h3>
+                    <p
+                      className={`font-manrope whitespace-pre-line ${isDark ? "text-gray-400" : "text-gray-600"}`}
+                    >
+                      {item.content}
+                    </p>
                     {item.action && (
-                      <a href={item.action.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gold hover:text-saffron font-manrope text-sm mt-3">
+                      <a
+                        href={item.action.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-gold hover:text-saffron font-manrope text-sm mt-3"
+                      >
                         {item.action.label} <ChevronRight className="w-4 h-4" />
                       </a>
                     )}
@@ -883,11 +923,11 @@ const ContactSection = () => {
             <div className="map-container h-full min-h-[400px] rounded-2xl overflow-hidden">
               <iframe
                 data-testid="contact-map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.7!2d75.98!3d11.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMananthavady!5e0!3m2!1sen!2sin!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.4767443511623!2d76.0146581!3d11.801846500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5df39e61eba93%3A0x5d9e66e8bf83dce4!2sAdhiveda%20Alternative%20Healing%20And%20Research%20Center!5e0!3m2!1sen!2sin!4v1770911804877!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
-                style={{ border: 0, minHeight: '400px' }}
-                allowFullScreen=""
+                style={{ border: 0, minHeight: "400px" }}
+                allowFullScreen
                 loading="lazy"
                 title="Adhiveda Location"
               />

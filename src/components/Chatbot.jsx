@@ -11,11 +11,11 @@ const chatOptions = [
     response: {
       text: "We are located at:",
       details:
-        "3rd Floor, Zealand Tower, M. M 23/367, Valliyoorkaav Road, near Vaderi Shiva Temple Road, Mananthavady, Kerala 670645",
+        "Mananthavady, Valliyoorkkavu Road, Near Vaderi Siva Temple, Opp. Joy Palace",
       action: {
         type: "link",
         label: "Open in Google Maps",
-        url: "https://maps.google.com/?q=Mananthavady+Valliyoorkkavu+Road+Near+Vaderi+Siva+Temple",
+        url: "https://maps.app.goo.gl/DHQ6z1Vt7Tc4ztii8",
       },
     },
   },
