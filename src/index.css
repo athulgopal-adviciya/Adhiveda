@@ -40,7 +40,8 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 50px;  
+  scroll-padding-top: 50px; 
+   overflow-x: hidden; 
 }
 body {
   font-family: 'Manrope', sans-serif;
