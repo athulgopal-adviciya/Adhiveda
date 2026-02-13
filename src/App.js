@@ -428,9 +428,9 @@ const Navbar = () => {
               className="lg:hidden p-2 text-saffron"
             >
               {isMobileMenuOpen ? (
-                <X className="w-6 h-6" />
+                <X className={`w-6 h-6 ${isDark ? "text-gray-300" : ""}`} />
               ) : (
-                <Menu className="w-6 h-6" />
+                <Menu className={`w-6 h-6 ${isDark ? "text-gray-300" : ""}`} />
               )}
             </button>
           </div>
@@ -464,7 +464,9 @@ const Navbar = () => {
                         }, 120);
                       }
                     }}
-                    className="font-manrope text-sm uppercase tracking-wider"
+                    className={`font-manrope text-sm uppercase tracking-wider ${
+                      isDark ? "text-gray-300" : ""
+                    }`}
                   >
                     {link.label}
                   </a>
