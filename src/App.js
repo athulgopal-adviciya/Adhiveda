@@ -349,21 +349,39 @@ const Navbar = () => {
       data-testid="navbar"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "glass shadow-soft py-2" : "py-3"} ${isDark ? 'bg-cosmic/95' : 'bg-cream/95'} backdrop-blur-md`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "glass shadow-soft py-2" : "py-3"} ${isDark ? "bg-cosmic/95" : "bg-cream/95"} backdrop-blur-md`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div className="flex items-center justify-between">
-          <a href="#hero" className="flex items-center gap-3" data-testid="nav-logo">
-            <img src={LOGO_DARK} alt="Adhiveda" className="w-12 h-12 rounded-full object-cover shadow-glow" />
+          <a
+            href="#hero"
+            className="flex items-center gap-3"
+            data-testid="nav-logo"
+          >
+            <img
+              src={LOGO_DARK}
+              alt="Adhiveda"
+              className="w-12 h-12 rounded-full object-cover shadow-glow"
+            />
             <div className="hidden sm:block">
-              <h1 className="font-cormorant text-xl font-bold text-saffron leading-tight">Adhiveda</h1>
-              <p className={`text-xs font-manrope -mt-0.5 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Healing & Research Centre</p>
+              <h1 className="font-cormorant text-xl font-bold text-saffron leading-tight">
+                Adhiveda
+              </h1>
+              <p
+                className={`text-xs font-manrope -mt-0.5 ${isDark ? "text-gray-400" : "text-gray-600"}`}
+              >
+                Healing & Research Centre
+              </p>
             </div>
           </a>
 
           <div className="hidden lg:flex items-center gap-5">
             {navLinks.map((link) => (
-              <a key={link.href} href={link.href} className={`nav-link font-manrope text-xs uppercase tracking-wider transition-colors ${isDark ? 'text-gray-300 hover:text-gold' : 'text-gray-700 hover:text-gold'}`}>
+              <a
+                key={link.href}
+                href={link.href}
+                className={`nav-link font-manrope text-xs uppercase tracking-wider transition-colors ${isDark ? "text-gray-300 hover:text-gold" : "text-gray-700 hover:text-gold"}`}
+              >
                 {link.label}
               </a>
             ))}
@@ -374,7 +392,9 @@ const Navbar = () => {
             <LanguageSwitcher />
             <Button
               data-testid="nav-cta"
-              onClick={() => window.open(`https://wa.me/${CONTACT.whatsapp}`, '_blank')}
+              onClick={() =>
+                window.open(`https://wa.me/${CONTACT.whatsapp}`, "_blank")
+              }
               className="hidden md:flex bg-saffron hover:bg-saffron-hover text-cream font-manrope text-xs tracking-wide px-4"
             >
               {t.hero.booking}
@@ -384,7 +404,11 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="lg:hidden p-2 text-saffron"
             >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
@@ -399,7 +423,26 @@ const Navbar = () => {
             >
               <div className="flex flex-col gap-4 pt-4">
                 {navLinks.map((link) => (
-                  <a key={link.href} href={link.href} onClick={() => setIsMobileMenuOpen(false)} className="font-manrope text-sm uppercase tracking-wider">
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const targetId = link.href.replace("#", "");
+                      const element = document.getElementById(targetId);
+                      if (element) {
+                        setIsMobileMenuOpen(false);
+
+                        setTimeout(() => {
+                          element.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                          });
+                        }, 120);
+                      }
+                    }}
+                    className="font-manrope text-sm uppercase tracking-wider"
+                  >
                     {link.label}
                   </a>
                 ))}
