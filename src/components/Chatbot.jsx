@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, X, MapPin, Clock, Phone, Calendar, ChevronRight } from 'lucide-react';
 import { Button } from './ui/button';
+import { useTheme } from "@/App";
 
 const chatOptions = [
   {
@@ -64,7 +65,7 @@ const chatOptions = [
 export const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
-
+ const { isDark } = useTheme();
   const handleOptionClick = (option) => {
     setSelectedOption(option);
   };
@@ -90,7 +91,11 @@ export const Chatbot = () => {
         whileTap={{ scale: 0.95 }}
         aria-label="Open chat assistant"
       >
-        {isOpen ? <X className="w-6 h-6" /> : <MessageCircle className="w-6 h-6" />}
+        {isOpen ? (
+          <X className="w-6 h-6" />
+        ) : (
+          <MessageCircle className="w-6 h-6" />
+        )}
       </motion.button>
 
       {/* Chatbot Panel */}
@@ -108,15 +113,19 @@ export const Chatbot = () => {
             <div className="bg-gradient-to-r from-saffron to-saffron-hover p-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-cream/20 flex items-center justify-center">
-                  <img 
-                    src="https://customer-assets.emergentagent.com/job_8657cdcb-5845-4b6f-94df-482e56460fc1/artifacts/fg0kf7of_WhatsApp%20Image%202026-01-28%20at%2014.55.03.jpeg" 
+                  <img
+                    src="https://customer-assets.emergentagent.com/job_8657cdcb-5845-4b6f-94df-482e56460fc1/artifacts/fg0kf7of_WhatsApp%20Image%202026-01-28%20at%2014.55.03.jpeg"
                     alt="Adhiveda"
                     className="w-8 h-8 rounded-full object-cover"
                   />
                 </div>
                 <div>
-                  <h3 className="font-cormorant text-lg font-semibold text-cream">Adhiveda Assistant</h3>
-                  <p className="text-xs text-cream/80 font-manrope">How can we help you?</p>
+                  <h3 className="font-cormorant text-lg font-semibold text-cream">
+                    Adhiveda Assistant
+                  </h3>
+                  <p className="text-xs text-cream/80 font-manrope">
+                    How can we help you?
+                  </p>
                 </div>
               </div>
             </div>
@@ -146,7 +155,9 @@ export const Chatbot = () => {
                         className="w-full flex items-center gap-3 p-3 rounded-xl border border-gold/20 hover:border-gold hover:bg-gold/5 transition-all group"
                       >
                         <div className="w-10 h-10 rounded-full bg-cream flex items-center justify-center text-saffron group-hover:bg-gold group-hover:text-white transition-colors">
-                          <option.icon className="w-5 h-5" />
+                          <option.icon
+                            className={`w-5 h-5 ${isDark ? "text-white" : ""}`}
+                          />
                         </div>
                         <span className="flex-1 text-left font-manrope text-sm text-gray-700">
                           {option.label}
@@ -166,30 +177,45 @@ export const Chatbot = () => {
                     <button
                       data-testid="chatbot-back"
                       onClick={handleBack}
-                      className="flex items-center gap-1 text-sm text-gold hover:text-saffron mb-4 font-manrope"
+                      className={`flex items-center gap-1 text-sm text-gold mb-4 font-manrope ${
+                        isDark ? "hover:text-cream" : "hover:text-saffron"
+                      }`}
                     >
                       <ChevronRight className="w-4 h-4 rotate-180" />
                       Back to options
                     </button>
-                    
+
                     <div className="bg-cream rounded-xl p-4 space-y-3">
                       <div className="flex items-center gap-2">
                         <selectedOption.icon className="w-5 h-5 text-gold" />
-                        <span className="font-semibold text-saffron font-cormorant text-lg">
+                        <span
+                          className={`font-semibold font-cormorant text-lg ${
+                            isDark ? "text-cream" : "text-saffron"
+                          }`}
+                        >
                           {selectedOption.label}
                         </span>
                       </div>
-                      <p className="text-sm text-gray-600 font-manrope">
+                      <p
+                        className={`text-sm font-manrope ${
+                          isDark ? "text-gold" : "text-gray-600"
+                        }`}
+                      >
                         {selectedOption.response.text}
                       </p>
-                      <p className="text-sm text-gray-800 font-medium whitespace-pre-line font-manrope">
+                      <p
+                        className={`text-sm font-medium whitespace-pre-line font-manrope ${
+                          isDark ? "text-cream" : "text-gray-800"
+                        }`}
+                      >
                         {selectedOption.response.details}
                       </p>
-                      
                       {selectedOption.response.action && (
                         <Button
                           data-testid={`chatbot-action-${selectedOption.id}`}
-                          onClick={() => handleActionClick(selectedOption.response.action)}
+                          onClick={() =>
+                            handleActionClick(selectedOption.response.action)
+                          }
                           className="w-full mt-3 bg-saffron hover:bg-saffron-hover text-cream font-manrope text-sm"
                         >
                           {selectedOption.response.action.label}
@@ -203,7 +229,11 @@ export const Chatbot = () => {
 
             {/* Footer */}
             <div className="border-t border-gold/10 p-3 bg-cream/50">
-              <p className="text-xs text-center text-gray-500 font-manrope">
+              <p
+                className={`text-xs text-center font-manrope ${
+                  isDark ? "text-cream" : "text-gray-500"
+                }`}
+              >
                 For detailed inquiries, please call or WhatsApp us
               </p>
             </div>

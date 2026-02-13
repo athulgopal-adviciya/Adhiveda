@@ -247,8 +247,7 @@ const ThemeProvider = ({ children }) => {
     </ThemeContext.Provider>
   );
 };
-
-const useTheme = () => useContext(ThemeContext);
+export const useTheme = () => useContext(ThemeContext);
 
 // Language Provider
 const LanguageProvider = ({ children }) => {
@@ -281,6 +280,7 @@ const ThemeSwitcher = () => {
 
 // Language Switcher
 const LanguageSwitcher = () => {
+  const { isDark } = useTheme();
   const { lang, setLang } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -292,9 +292,13 @@ const LanguageSwitcher = () => {
         className="flex items-center gap-2 px-3 py-2 rounded-full border border-gold/30 hover:border-gold transition-all font-manrope text-sm"
       >
         <Globe className="w-4 h-4 text-gold" />
-        <span className="hidden sm:inline">{languages.find(l => l.code === lang)?.name}</span>
+        <span
+          className={`hidden sm:inline ${isDark ? "text-white" : "text-black"}`}
+        >
+          {languages.find((l) => l.code === lang)?.name}
+        </span>
       </button>
-      
+
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -307,12 +311,27 @@ const LanguageSwitcher = () => {
               <button
                 key={language.code}
                 data-testid={`lang-${language.code}`}
-                onClick={() => { setLang(language.code); setIsOpen(false); }}
-                className={`w-full flex items-center gap-3 px-4 py-3 hover:bg-gold/10 transition-colors ${lang === language.code ? 'bg-gold/10' : ''}`}
+                onClick={() => {
+                  setLang(language.code);
+                  setIsOpen(false);
+                }}
+                className={`w-full flex items-center gap-3 px-4 py-3 hover:bg-gold/10 transition-colors ${lang === language.code ? "bg-gold/10" : ""}`}
               >
-                <span className="text-lg">{language.flag}</span>
-                <span className="font-manrope text-sm">{language.name}</span>
-                {lang === language.code && <Check className="w-4 h-4 text-gold ml-auto" />}
+                <span
+                  className={`text-lg ${isDark ? "text-white" : "text-black"}`}
+                >
+                  {language.flag}
+                </span>
+
+                <span
+                  className={`font-manrope text-sm ${isDark ? "text-white" : "text-black"}`}
+                >
+                  {language.name}
+                </span>
+
+                {lang === language.code && (
+                  <Check className="w-4 h-4 text-gold ml-auto" />
+                )}
               </button>
             ))}
           </motion.div>
@@ -364,7 +383,11 @@ const Navbar = () => {
               className="w-12 h-12 rounded-full object-cover shadow-glow"
             />
             <div className="hidden sm:block">
-              <h1 className="font-cormorant text-xl font-bold text-saffron leading-tight">
+              <h1
+                className={`font-cormorant text-xl font-bold leading-tight ${
+                  isDark ? "text-gray-300" : "text-saffron"
+                }`}
+              >
                 Adhiveda
               </h1>
               <p
@@ -684,7 +707,11 @@ const AboutSection = () => {
   const { isDark } = useTheme();
   
   return (
-    <section id="about" data-testid="about-section" className={`py-3 md:py-8 relative ${isDark ? 'bg-cosmic' : 'bg-cream'}`}>
+    <section
+      id="about"
+      data-testid="about-section"
+      className={`py-3 md:py-8 relative ${isDark ? "bg-cosmic" : "bg-cream"}`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -692,8 +719,12 @@ const AboutSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-gold font-manrope text-sm uppercase tracking-widest">{t.about.label}</span>
-          <h2 className={`font-cormorant text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 section-title ${isDark ? 'text-cream' : 'text-saffron'}`}>
+          <span className="text-gold font-manrope text-sm uppercase tracking-widest">
+            {t.about.label}
+          </span>
+          <h2
+            className={`font-cormorant text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 section-title ${isDark ? "text-cream" : "text-saffron"}`}
+          >
             {t.about.title}
           </h2>
         </motion.div>
@@ -705,14 +736,34 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="relative rounded-2xl overflow-hidden shadow-card"
           >
-            <img src={GALLERY_IMAGES[0]} alt="Adhiveda Centre" className="w-full h-[400px] object-cover" />
+            <img
+              src={GALLERY_IMAGES[0]}
+              alt="Adhiveda Centre"
+              className="w-full h-[400px] object-cover"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-saffron/30 to-transparent" />
-            <div className={`absolute bottom-6 left-6 right-6 p-4 rounded-xl ${isDark ? 'bg-cosmic/90' : 'bg-white/90'} backdrop-blur-sm`}>
+            <div
+              className={`absolute bottom-6 left-6 right-6 p-4 rounded-xl ${isDark ? "bg-cosmic/90" : "bg-white/90"} backdrop-blur-sm`}
+            >
               <div className="flex items-center gap-4">
-                <img src={ADHIVEDA_FOUNDATION_LOGO} alt="Adhiveda Foundation" className="h-12 w-auto" />
+                <img
+                  src={ADHIVEDA_FOUNDATION_LOGO}
+                  alt="Adhiveda Foundation"
+                  className="h-12 w-auto"
+                />
                 <div>
-                  <p className="font-cormorant text-lg text-saffron font-semibold">Adhiveda Foundation</p>
-                  <p className={`font-manrope text-xs ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Registered under Vedaguru Pvt. Ltd.</p>
+                  <p
+                    className={`font-cormorant text-lg font-semibold ${
+                      isDark ? "text-gray-300" : "text-saffron"
+                    }`}
+                  >
+                    Adhiveda Foundation
+                  </p>
+                  <p
+                    className={`font-manrope text-xs ${isDark ? "text-gray-400" : "text-gray-600"}`}
+                  >
+                    Registered under Vedaguru Pvt. Ltd.
+                  </p>
                 </div>
               </div>
             </div>
@@ -724,8 +775,16 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <p className={`font-manrope text-lg leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>{t.about.p1}</p>
-            <p className={`font-manrope leading-relaxed ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>{t.about.p2}</p>
+            <p
+              className={`font-manrope text-lg leading-relaxed ${isDark ? "text-gray-300" : "text-gray-700"}`}
+            >
+              {t.about.p1}
+            </p>
+            <p
+              className={`font-manrope leading-relaxed ${isDark ? "text-gray-400" : "text-gray-600"}`}
+            >
+              {t.about.p2}
+            </p>
 
             <div className="grid grid-cols-2 gap-4 pt-4">
               {t.about.features.map((feature, index) => {
@@ -738,10 +797,14 @@ const AboutSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className={`flex items-center gap-3 p-4 rounded-xl border border-gold/20 ${isDark ? 'bg-cosmic-dark' : 'bg-white'}`}
+                    className={`flex items-center gap-3 p-4 rounded-xl border border-gold/20 ${isDark ? "bg-cosmic-dark" : "bg-white"}`}
                   >
                     <Icon className="w-5 h-5 text-gold flex-shrink-0" />
-                    <span className={`font-manrope text-sm ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>{feature}</span>
+                    <span
+                      className={`font-manrope text-sm ${isDark ? "text-gray-300" : "text-gray-700"}`}
+                    >
+                      {feature}
+                    </span>
                   </motion.div>
                 );
               })}
@@ -785,16 +848,32 @@ const ServicesSection = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 data-testid={`service-card-${index}`}
-                className={`service-card p-8 rounded-2xl border border-gold/20 group ${isDark ? 'bg-cosmic' : 'bg-cream'}`}
+                className={`service-card p-8 rounded-2xl border border-gold/20 group ${isDark ? "bg-cosmic" : "bg-cream"}`}
               >
                 <div className="flex items-start gap-4">
-                  <div className={`service-icon w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-gold transition-colors ${isDark ? 'bg-cosmic-dark' : 'bg-white'}`}>
-                    <Icon className="w-7 h-7 text-saffron group-hover:text-white transition-colors" />
+                  <div
+                    className={`service-icon w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-gold transition-colors ${isDark ? "bg-cosmic-dark" : "bg-white"}`}
+                  >
+                    <Icon
+                      className={`w-7 h-7 transition-colors ${
+                        isDark ? "text-cream" : "text-saffron"
+                      } group-hover:text-white`}
+                    />
                   </div>
                   <div className="flex-1">
-                    <h3 className={`font-cormorant text-xl sm:text-2xl font-semibold mb-1 ${isDark ? 'text-cream' : 'text-saffron'}`}>{service.title}</h3>
-                    <p className="font-cormorant text-sm text-gold italic mb-3">{service.titleLocal}</p>
-                    <p className={`font-manrope text-sm leading-relaxed ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>{service.description}</p>
+                    <h3
+                      className={`font-cormorant text-xl sm:text-2xl font-semibold mb-1 ${isDark ? "text-cream" : "text-saffron"}`}
+                    >
+                      {service.title}
+                    </h3>
+                    <p className="font-cormorant text-sm text-gold italic mb-3">
+                      {service.titleLocal}
+                    </p>
+                    <p
+                      className={`font-manrope text-sm leading-relaxed ${isDark ? "text-gray-400" : "text-gray-600"}`}
+                    >
+                      {service.description}
+                    </p>
                   </div>
                 </div>
               </motion.div>
@@ -1038,7 +1117,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={`mt-12 pt-8 border-t border-gold/20 flex flex-col md:flex-row justify-between items-center gap-4 ${isDark ? 'text-gray-500' : 'text-gray-500'}`}>
+        <div className={`mt-12 pt-8 border-t border-gold/20 flex flex-col md:flex-row justify-between items-center gap-4 ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
           <p className="font-manrope text-sm">© {new Date().getFullYear()} Adhiveda Alternative Healing and Research Centre. {t.footer.rights}</p>
         </div>
       </div>
