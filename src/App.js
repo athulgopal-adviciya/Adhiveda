@@ -80,11 +80,12 @@ const translations = {
       cta2: "Meet Our Founder",
       booking: "Book Consultation",
       trust: "Trusted by thousands seeking divine guidance",
+      preBookingNote: "Pre-booking required for personal consultations",
     },
     founder: {
       label: "Visionary Leader",
       title: "Vishnu Prakash",
-     role: "Managing Director, Adhiveda Foundation",
+      role: "Managing Director, Adhiveda Foundation",
       roles: [
         "Co-Founder, Tribalosophy International (Europe)",
         "Managing Director, Vedhaguru International",
@@ -101,6 +102,7 @@ const translations = {
         "Thousands Transformed",
         "Vedic Research Pioneer",
       ],
+      scheduleCta: "Schedule Personal Consultation",
     },
     about: {
       label: "Our Legacy",
@@ -195,12 +197,18 @@ const translations = {
       cta2: "സ്ഥാപകനെ കാണുക",
       booking: "കൺസൾട്ടേഷൻ ബുക്ക് ചെയ്യുക",
       trust: "ദൈവിക മാർഗ്ഗനിർദ്ദേശം തേടുന്ന ആയിരങ്ങൾ വിശ്വസിക്കുന്നു",
+      preBookingNote: "വ്യക്തിഗത കൺസൾട്ടേഷനുകൾക്ക് മുൻകൂർ ബുക്കിംഗ് ആവശ്യമാണ്",
     },
     founder: {
       label: "ദർശനപരമായ നേതാവ്",
       title: "വിഷ്ണു പ്രകാശ്",
-      role: "ഡയറക്ടർ, വേദഗുരു ഇന്റർനാഷണൽ",
-      role2: "സഹസ്ഥാപകൻ, ട്രൈബാലോസഫി ഇന്റർനാഷണൽ (യൂറോപ്പ്)",
+      role: "മാനേജിംഗ് ഡയറക്ടർ, ആദിവേദ ഫൗണ്ടേഷൻ",
+      roles: [
+        "സഹസ്ഥാപകൻ, ട്രൈബാലോസഫി ഇന്റർനാഷണൽ (യൂറോപ്പ്)",
+        "മാനേജിംഗ് ഡയറക്ടർ, വേദഗുരു ഇന്റർനാഷണൽ",
+        "പുരോഹിതൻ (തന്ത്രി), പയ്മൂല ദേവസ്ഥാനം",
+        "ആത്മീയ ഗുരു",
+      ],
       description:
         "വേദ പാരമ്പര്യങ്ങളുടെ പവിത്ര ജ്ഞാനത്തിലൂടെ ജീവിതങ്ങളെ പരിവർത്തനം ചെയ്യാൻ സമർപ്പിതനായ ഒരു പ്രശസ്ത ആത്മീയ ചികിത്സകനും ദർശനപരമായ നേതാവുമാണ്.",
       quote:
@@ -211,6 +219,7 @@ const translations = {
         "ആയിരങ്ങളെ പരിവർത്തനം ചെയ്തു",
         "വേദ ഗവേഷണ പയനിയർ",
       ],
+      scheduleCta: "വ്യക്തിഗത കൺസൾട്ടേഷൻ ഷെഡ്യൂൾ ചെയ്യുക",
     },
     about: {
       label: "ഞങ്ങളുടെ പൈതൃകം",
@@ -304,12 +313,18 @@ const translations = {
       cta2: "நிறுவனரைச் சந்தியுங்கள்",
       booking: "ஆலோசனை பதிவு",
       trust: "தெய்வீக வழிகாட்டுதலை நாடும் ஆயிரக்கணக்கானோரால் நம்பப்படுகிறது",
+      preBookingNote: "தனிப்பட்ட ஆலோசனைகளுக்கு முன்பதிவு தேவை",
     },
     founder: {
       label: "தொலைநோக்கு தலைவர்",
       title: "விஷ்ணு பிரகாஷ்",
-      role: "இயக்குனர், வேதகுரு இன்டர்நேஷனல்",
-      role2: "இணை நிறுவனர், ட்ரைபாலோசோபி இன்டர்நேஷனல் (ஐரோப்பா)",
+      role: "நிர்வாக இயக்குநர், ஆதிவேதா அறக்கட்டளை",
+      roles: [
+        "இணை நிறுவனர், ட்ரைபாலோசோபி இன்டர்நேஷனல் (ஐரோப்பா)",
+        "நிர்வாக இயக்குநர், வேதகுரு இன்டர்நேஷனல்",
+        "புரோகிதர் (தந்திரி), பய்மூலா தேவஸ்தானம்",
+        "ஆன்மீக வழிகாட்டி",
+      ],
       description:
         "வேத மரபுகளின் புனித ஞானத்தின் மூலம் வாழ்க்கையை மாற்றுவதற்கு அர்ப்பணிக்கப்பட்ட புகழ்பெற்ற ஆன்மீக குணப்படுத்துபவர்.",
       quote:
@@ -320,6 +335,7 @@ const translations = {
         "ஆயிரக்கணக்கானோர் மாற்றப்பட்டனர்",
         "வேத ஆராய்ச்சி முன்னோடி",
       ],
+      scheduleCta: "தனிப்பட்ட ஆலோசனை ஷெட்யூல் செய்யுங்கள்",
     },
     about: {
       label: "எங்கள் மரபு",
@@ -409,12 +425,18 @@ const translations = {
       cta2: "ಸ್ಥಾಪಕರನ್ನು ಭೇಟಿ ಮಾಡಿ",
       booking: "ಸಮಾಲೋಚನೆ ಬುಕ್ ಮಾಡಿ",
       trust: "ದೈವಿಕ ಮಾರ್ಗದರ್ಶನ ಹುಡುಕುತ್ತಿರುವ ಸಾವಿರಾರು ಜನರು ನಂಬುತ್ತಾರೆ",
+      preBookingNote: "ವೈಯಕ್ತಿಕ ಸಮಾಲೋಚನೆಗೆ ಮುಂಚಿತ ಬುಕಿಂಗ್ ಅಗತ್ಯವಿದೆ",
     },
     founder: {
       label: "ದೂರದೃಷ್ಟಿಯ ನಾಯಕ",
       title: "ವಿಷ್ಣು ಪ್ರಕಾಶ್",
-      role: "ನಿರ್ದೇಶಕ, ವೇದಗುರು ಇಂಟರ್ನ್ಯಾಷನಲ್",
-      role2: "ಸಹ-ಸಂಸ್ಥಾಪಕ, ಟ್ರೈಬಾಲೋಸೋಫಿ ಇಂಟರ್ನ್ಯಾಷನಲ್ (ಯುರೋಪ್)",
+      role: "ವ್ಯವಸ್ಥಾಪಕ ನಿರ್ದೇಶಕ, ಆದಿವೇದ ಫೌಂಡೇಶನ್",
+      roles: [
+        "ಸಹ-ಸಂಸ್ಥಾಪಕ, ಟ್ರೈಬಾಲೋಸಫಿ ಇಂಟರ್ನ್ಯಾಷನಲ್ (ಯುರೋಪ್)",
+        "ವ್ಯವಸ್ಥಾಪಕ ನಿರ್ದೇಶಕ, ವೇದಗುರು ಇಂಟರ್ನ್ಯಾಷನಲ್",
+        "ಪುರೋಹಿತ (ತಂತ್ರಿ), ಪಯ್ಮೂಲಾ ದೇವಸ್ಥಾನ",
+        "ಆಧ್ಯಾತ್ಮಿಕ ಮಾರ್ಗದರ್ಶಿ",
+      ],
       description:
         "ವೈದಿಕ ಸಂಪ್ರದಾಯಗಳ ಪವಿತ್ರ ಜ್ಞಾನದ ಮೂಲಕ ಜೀವನಗಳನ್ನು ಪರಿವರ್ತಿಸಲು ಮೀಸಲಾದ ಪ್ರಸಿದ್ಧ ಆಧ್ಯಾತ್ಮಿಕ ಗುಣಪಡಿಸುವವರು.",
       quote: '"ಪ್ರತಿ ಆತ್ಮಕ್ಕೂ ಪರಿವರ್ತಿಸುವ ಶಕ್ತಿ ಇದೆ."',
@@ -424,6 +446,7 @@ const translations = {
         "ಸಾವಿರಾರು ಪರಿವರ್ತಿತರು",
         "ವೈದಿಕ ಸಂಶೋಧನೆ ಪ್ರವರ್ತಕ",
       ],
+      scheduleCta: "ವೈಯಕ್ತಿಕ ಸಮಾಲೋಚನೆ ಶೆಡ್ಯೂಲ್ ಮಾಡಿ",
     },
     about: {
       label: "ನಮ್ಮ ಪರಂಪರೆ",
@@ -513,12 +536,19 @@ const translations = {
       cta2: "Incontra il Fondatore",
       booking: "Prenota Consulenza",
       trust: "Fidato da migliaia che cercano la guida divina",
+      preBookingNote:
+        "È richiesta la prenotazione anticipata per consulenze personali",
     },
     founder: {
       label: "Leader Visionario",
       title: "Vishnu Prakash",
-      role: "Direttore, Vedaguru International",
-      role2: "Co-Fondatore, Tribalosophy International (Europa)",
+      role: "Direttore Generale, Adhiveda Foundation",
+      roles: [
+        "Co-Fondatore, Tribalosophy International (Europa)",
+        "Direttore Generale, Vedhaguru International",
+        "Sacerdote (Thantri), Paymoola Devasthanam",
+        "Guida Spirituale",
+      ],
       description:
         "Un rinomato guaritore spirituale e leader visionario dedicato a trasformare vite attraverso la sacra saggezza delle tradizioni vediche.",
       quote:
@@ -529,6 +559,7 @@ const translations = {
         "Migliaia Trasformati",
         "Pioniere della Ricerca Vedica",
       ],
+      scheduleCta: "Pianifica Consulenza Personale",
     },
     about: {
       label: "La Nostra Eredità",
@@ -939,7 +970,7 @@ const HeroSection = () => {
                 <p
                   className={`mt-3 text-xs sm:text-sm ${isDark ? "text-gold/70" : "text-saffron/70"} font-manrope`}
                 >
-                  Pre-booking required for personal consultations
+                  {t.hero.preBookingNote}
                 </p>
               </div>
 
@@ -972,7 +1003,6 @@ const HeroSection = () => {
                 <Clock className="w-4 h-4" />
                 <span className="font-manrope">{t.timing}</span>
               </div>
-        
             </div>
           </motion.div>
 
@@ -984,7 +1014,7 @@ const HeroSection = () => {
             className="flex justify-center order-2 lg:order-2 relative"
           >
             <div className="relative">
-              <div className="absolute  -top-16  sm:-right-56 -right-36  lg:-top-32 lg:-right-64 xl:-right-72 2xl:-right-80  w-52 h-52 sm:w-72 sm:h-72 lg:w-96 lg:h-96 pointer-events-none z-0">
+              <div className="absolute  -top-16  sm:-right-56 -right-28  lg:-top-32 lg:-right-64 xl:-right-72 2xl:-right-80  w-52 h-52 sm:w-72 sm:h-72 lg:w-96 lg:h-96 pointer-events-none z-0">
                 <img
                   src="/images/Chakra.webp"
                   alt=""
@@ -997,32 +1027,33 @@ const HeroSection = () => {
                   }}
                 />
               </div>
+              <div className=" relative right-16 md:right-0">
+                {/* Glow Effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-gold/30 to-saffron/20 rounded-full blur-3xl scale-110" />
 
-              {/* Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-gold/30 to-saffron/20 rounded-full blur-3xl scale-110" />
+                {/* Main Image */}
+                <div className="relative z-10">
+                  <img
+                    src={VISHNU_PRAKASH_1}
+                    alt="Vishnu Prakash - Founder"
+                    className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl border-4 border-gold/40"
+                  />
 
-              {/* Main Image */}
-              <div className="relative z-10">
-                <img
-                  src={VISHNU_PRAKASH_1}
-                  alt="Vishnu Prakash - Founder"
-                  className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl border-4 border-gold/40"
-                />
+                  <div className="absolute inset-0 rounded-full border-2 border-gold/20 scale-110" />
+                  <div className="absolute inset-0 rounded-full border border-gold/10 scale-125" />
+                </div>
 
-                <div className="absolute inset-0 rounded-full border-2 border-gold/20 scale-110" />
-                <div className="absolute inset-0 rounded-full border border-gold/10 scale-125" />
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6 }}
+                  className={`absolute -bottom-4 left-1/2 -translate-x-1/2 px-6 py-3 rounded-full shadow-lg border border-gold/30 z-20 ${isDark ? "bg-cosmic" : "bg-white"}`}
+                >
+                  <p className="font-cormorant text-lg font-semibold text-gold whitespace-nowrap">
+                    Vishnu Prakash
+                  </p>
+                </motion.div>
               </div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 }}
-                className={`absolute -bottom-4 left-1/2 -translate-x-1/2 px-6 py-3 rounded-full shadow-lg border border-gold/30 z-20 ${isDark ? "bg-cosmic" : "bg-white"}`}
-              >
-                <p className="font-cormorant text-lg font-semibold text-gold whitespace-nowrap">
-                  Vishnu Prakash
-                </p>
-              </motion.div>
             </div>
           </motion.div>
         </div>
@@ -1169,7 +1200,7 @@ const FounderSection = () => {
               }
               className="bg-saffron hover:bg-saffron-hover text-cream font-manrope"
             >
-              Schedule Personal Consultation
+              {t.founder.scheduleCta}
               <ChevronRight className="w-5 h-5 ml-2" />
             </Button>
           </motion.div>
