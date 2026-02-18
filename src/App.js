@@ -108,13 +108,15 @@ const translations = {
       label: "Our Legacy",
       title: "Remove Obstacles, Transform Lives",
       p1: "Adhiveda Alternative Healing and Research Centre stands as a beacon of hope for those seeking profound transformation. We are a sacred sanctuary dedicated to removing life's obstacles and guiding you toward lasting positive change through the timeless wisdom of Vedic traditions.",
-      p2: "Registered under Vedaguru Pvt. Ltd. and supported by Adhiveda Foundation, our centre masterfully blends ancient spiritual practices with holistic healing methods perfected over millennia.",
+      p2: "Registered Adhiveda Foundation, our centre masterfully blends ancient spiritual practices with holistic healing methods perfected over millennia.",
       features: [
         "Divine Guidance",
         "Obstacle Removal",
         "Life Transformation",
         "Inner Peace",
       ],
+      centerName: "Adhiveda Alternative Healing & Research Center",
+      registeredUnder: "Registered under Adhiveda Foundation.",
     },
     services: {
       label: "Sacred Services",
@@ -225,13 +227,15 @@ const translations = {
       label: "ഞങ്ങളുടെ പൈതൃകം",
       title: "തടസ്സങ്ങൾ നീക്കുക, ജീവിതങ്ങൾ പരിവർത്തനം ചെയ്യുക",
       p1: "ആഴത്തിലുള്ള പരിവർത്തനം തേടുന്നവർക്ക് പ്രതീക്ഷയുടെ വെളിച്ചമായി ആദിവേദ ആൾട്ടർനേറ്റീവ് ഹീലിംഗ് ആൻഡ് റിസേർച്ച് സെന്റർ നിലകൊള്ളുന്നു.",
-      p2: "വേദഗുരു പ്രൈവറ്റ് ലിമിറ്റഡിന് കീഴിൽ രജിസ്റ്റർ ചെയ്തിരിക്കുന്ന ഞങ്ങളുടെ സെന്റർ പുരാതന ആത്മീയ പ്രയോഗങ്ങളെ സമഗ്ര ചികിത്സാ രീതികളുമായി സമർത്ഥമായി സമന്വയിപ്പിക്കുന്നു.",
+      p2: "ആദിവേദ ഫൗണ്ടേഷന്റെ കീഴിൽ രജിസ്റ്റർ ചെയ്തിരിക്കുന്ന ഞങ്ങളുടെ കേന്ദ്രം, പുരാതന ആത്മീയ പ്രയോഗങ്ങളെ സമഗ്ര ചികിത്സാ രീതികളുമായി സമർത്ഥമായി സമന്വയിപ്പിക്കുന്നു.",
       features: [
         "ദൈവിക മാർഗ്ഗദർശനം",
         "തടസ്സ നിവാരണം",
         "ജീവിത പരിവർത്തനം",
         "ആന്തരിക സമാധാനം",
       ],
+      centerName: "ആദിവേദ ആൾട്ടർനേറ്റീവ് ഹീലിംഗ് & റിസേർച്ച് സെന്റർ",
+      registeredUnder: "ആദിവേദ ഫൗണ്ടേഷന് കീഴിൽ രജിസ്റ്റർ ചെയ്തത്.",
     },
     services: {
       label: "പവിത്ര സേവനങ്ങൾ",
@@ -341,13 +345,15 @@ const translations = {
       label: "எங்கள் மரபு",
       title: "தடைகளை நீக்கு, வாழ்க்கைகளை மாற்று",
       p1: "ஆழமான மாற்றத்தை நாடுபவர்களுக்கு நம்பிக்கையின் கலங்கரை விளக்கமாக ஆதிவேதா நிற்கிறது.",
-      p2: "வேதகுரு பிரைவேட் லிமிடெட் கீழ் பதிவுசெய்யப்பட்டது.",
+      p2: "ஆதிவேதா அறக்கட்டளையின் கீழ் பதிவு செய்யப்பட்டது.",
       features: [
         "தெய்வீக வழிகாட்டுதல்",
         "தடை நீக்கம்",
         "வாழ்க்கை மாற்றம்",
         "உள் அமைதி",
       ],
+      centerName: "ஆதிவேதா மாற்று சிகிச்சை & ஆராய்ச்சி மையம்",
+      registeredUnder: "ஆதிவேதா அறக்கட்டளையின் கீழ் பதிவு செய்யப்பட்டது.",
     },
     services: {
       label: "புனித சேவைகள்",
@@ -452,13 +458,15 @@ const translations = {
       label: "ನಮ್ಮ ಪರಂಪರೆ",
       title: "ಅಡೆತಡೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ, ಜೀವನಗಳನ್ನು ಪರಿವರ್ತಿಸಿ",
       p1: "ಆಳವಾದ ಪರಿವರ್ತನೆಯನ್ನು ಹುಡುಕುತ್ತಿರುವವರಿಗೆ ಭರವಸೆಯ ದೀಪಸ್ತಂಭವಾಗಿ ಆದಿವೇದ ನಿಂತಿದೆ.",
-      p2: "ವೇದಗುರು ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್ ಅಡಿಯಲ್ಲಿ ನೋಂದಾಯಿತ.",
+      p2: "ಆದಿವೇದ ಫೌಂಡೇಶನ್ ಅಡಿಯಲ್ಲಿ ನೋಂದಾಯಿಸಲಾಗಿದೆ.",
       features: [
         "ದೈವಿಕ ಮಾರ್ಗದರ್ಶನ",
         "ಅಡೆತಡೆ ನಿವಾರಣೆ",
         "ಜೀವನ ಪರಿವರ್ತನೆ",
         "ಆಂತರಿಕ ಶಾಂತಿ",
       ],
+      centerName: "ಆದಿವೇದ ಪರ್ಯಾಯ ಗುಣಪಡಿಸುವಿಕೆ & ಸಂಶೋಧನಾ ಕೇಂದ್ರ",
+      registeredUnder: "ಆದಿವೇದ ಫೌಂಡೇಶನ್ ಅಡಿಯಲ್ಲಿ ನೋಂದಾಯಿಸಲಾಗಿದೆ.",
     },
     services: {
       label: "ಪವಿತ್ರ ಸೇವೆಗಳು",
@@ -565,13 +573,15 @@ const translations = {
       label: "La Nostra Eredità",
       title: "Rimuovi Ostacoli, Trasforma Vite",
       p1: "Il Centro Adhiveda è un faro di speranza per chi cerca una profonda trasformazione.",
-      p2: "Registrato sotto Vedaguru Pvt. Ltd.",
+      p2: "Registrato sotto la Fondazione Adhiveda.",
       features: [
         "Guida Divina",
         "Rimozione Ostacoli",
         "Trasformazione della Vita",
         "Pace Interiore",
       ],
+      centerName: "Adhiveda Centro di Guarigione Alternativa e Ricerca",
+      registeredUnder: "Registrato sotto Adhiveda Foundation.",
     },
     services: {
       label: "Servizi Sacri",
@@ -1050,7 +1060,7 @@ const HeroSection = () => {
                   className={`absolute -bottom-4 left-1/2 -translate-x-1/2 px-6 py-3 rounded-full shadow-lg border border-gold/30 z-20 ${isDark ? "bg-cosmic" : "bg-white"}`}
                 >
                   <p className="font-cormorant text-lg font-semibold text-gold whitespace-nowrap">
-                    Vishnu Prakash
+                    {t.founder.title}
                   </p>
                 </motion.div>
               </div>
@@ -1262,16 +1272,16 @@ const AboutSection = () => {
                 />
                 <div>
                   <p
-                    className={`font-cormorant text-lg font-semibold ${
+                    className={`font-cormorant text-base  lg:text-lg font-semibold ${
                       isDark ? "text-gray-300" : "text-saffron"
                     }`}
                   >
-                    Adhiveda Alternative Healing & Research Center
+                    {t.about.centerName}
                   </p>
                   <p
                     className={`font-manrope text-xs ${isDark ? "text-gray-400" : "text-gray-600"}`}
                   >
-                    Registered under Adhiveda Foundation.
+                    {t.about.registeredUnder}
                   </p>
                 </div>
               </div>
