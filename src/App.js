@@ -63,53 +63,108 @@ const CONTACT = {
 // Translations
 const translations = {
   en: {
-    nav: { home: "Home", about: "About", founder: "Founder", services: "Services", gallery: "Gallery", contact: "Contact" },
+    nav: {
+      home: "Home",
+      about: "About",
+      founder: "Founder",
+      services: "Services",
+      gallery: "Gallery",
+      contact: "Contact",
+    },
     hero: {
       title: "Adhiveda",
       subtitle: "Alternative Healing & Research Centre",
-      description: "A sacred sanctuary where ancient Vedic wisdom meets transformative healing. Remove all obstacles from your path and embrace the divine journey of self-discovery and life transformation.",
+      description:
+        "A sacred sanctuary where ancient Vedic wisdom meets transformative healing. Remove all obstacles from your path and embrace the divine journey of self-discovery and life transformation.",
       cta1: "Begin Your Transformation",
       cta2: "Meet Our Founder",
       booking: "Book Consultation",
-      trust: "Trusted by thousands seeking divine guidance"
+      trust: "Trusted by thousands seeking divine guidance",
     },
     founder: {
       label: "Visionary Leader",
       title: "Vishnu Prakash",
-      role: "Director, Vedaguru International",
-      role2: "Co-Founder, Tribalosophy International (Europe)",
-      description: "A renowned spiritual healer and visionary leader dedicated to transforming lives through the sacred wisdom of Vedic traditions. With decades of experience in alternative healing, Vishnu Prakash has guided thousands of seekers on their path to enlightenment, removing obstacles and unlocking their true potential.",
-      quote: "\"Every soul has the power to transform. My mission is to guide you in discovering that divine spark within yourself and removing the obstacles that cloud your true path.\"",
-      achievements: ["20+ Years Experience", "International Recognition", "Thousands Transformed", "Vedic Research Pioneer"]
+     role: "Managing Director, Adhiveda Foundation",
+      roles: [
+        "Co-Founder, Tribalosophy International (Europe)",
+        "Managing Director, Vedhaguru International",
+        "Priest (Thantri), Paymoola Devasthanam",
+        "Spiritual Guide",
+      ],
+      description:
+        "A renowned spiritual healer and visionary leader dedicated to transforming lives through the sacred wisdom of Vedic traditions. With decades of experience in alternative healing, Vishnu Prakash has guided thousands of seekers on their path to enlightenment, removing obstacles and unlocking their true potential.",
+      quote:
+        '"Every soul has the power to transform. My mission is to guide you in discovering that divine spark within yourself and removing the obstacles that cloud your true path."',
+      achievements: [
+        "20+ Years Experience",
+        "International Recognition",
+        "Thousands Transformed",
+        "Vedic Research Pioneer",
+      ],
     },
     about: {
       label: "Our Legacy",
       title: "Remove Obstacles, Transform Lives",
       p1: "Adhiveda Alternative Healing and Research Centre stands as a beacon of hope for those seeking profound transformation. We are a sacred sanctuary dedicated to removing life's obstacles and guiding you toward lasting positive change through the timeless wisdom of Vedic traditions.",
       p2: "Registered under Vedaguru Pvt. Ltd. and supported by Adhiveda Foundation, our centre masterfully blends ancient spiritual practices with holistic healing methods perfected over millennia.",
-      features: ["Divine Guidance", "Obstacle Removal", "Life Transformation", "Inner Peace"]
+      features: [
+        "Divine Guidance",
+        "Obstacle Removal",
+        "Life Transformation",
+        "Inner Peace",
+      ],
     },
     services: {
       label: "Sacred Services",
       title: "Pathways to Transformation",
-      description: "Discover our sacred healing practices designed to remove obstacles, restore balance, and transform your life's journey.",
+      description:
+        "Discover our sacred healing practices designed to remove obstacles, restore balance, and transform your life's journey.",
       items: [
-        { title: "Thambula Rekha Astrology", titleLocal: "താംബൂലരേഖാ ജ്യോതിഷം", description: "Ancient leaf-reading astrology reveals hidden truths about your destiny. Through sacred betel leaves, uncover the obstacles blocking your path and receive divine guidance." },
-        { title: "Vedic Mind Healing", titleLocal: "വേദിക് മൈൻഡ് ഹീലിങ്", description: "Release mental blocks and negative patterns through powerful Vedic healing techniques. Experience profound clarity, inner peace, and renewed mental strength." },
-        { title: "Spiritual Consultation", titleLocal: "ആത്മീയ കൺസൾട്ടേഷൻ", description: "Receive personalized guidance for your spiritual journey. Our experts help identify and remove obstacles while providing clarity for life's most important decisions." },
-        { title: "Alternative Healing Programs", titleLocal: "ഹീലിങ് പ്രോഗ്രാംസ്", description: "Customized healing programs designed for complete life transformation. Address root causes of problems and experience lasting positive change." }
+        {
+          title: "Thambula Rekha Astrology",
+          titleLocal: "താംബൂലരേഖാ ജ്യോതിഷം",
+          description:
+            "Ancient leaf-reading astrology reveals hidden truths about your destiny. Through sacred betel leaves, uncover the obstacles blocking your path and receive divine guidance.",
+        },
+        {
+          title: "Vedic Mind Healing",
+          titleLocal: "വേദിക് മൈൻഡ് ഹീലിങ്",
+          description:
+            "Release mental blocks and negative patterns through powerful Vedic healing techniques. Experience profound clarity, inner peace, and renewed mental strength.",
+        },
+        {
+          title: "Spiritual Consultation",
+          titleLocal: "ആത്മീയ കൺസൾട്ടേഷൻ",
+          description:
+            "Receive personalized guidance for your spiritual journey. Our experts help identify and remove obstacles while providing clarity for life's most important decisions.",
+        },
+        {
+          title: "Alternative Healing Programs",
+          titleLocal: "ഹീലിങ് പ്രോഗ്രാംസ്",
+          description:
+            "Customized healing programs designed for complete life transformation. Address root causes of problems and experience lasting positive change.",
+        },
       ],
-      cta: "Inquire About Services"
+      cta: "Inquire About Services",
     },
-    gallery: { label: "Sacred Space", title: "Our Healing Sanctuary", description: "Step inside our sacred space where ancient wisdom meets divine healing." },
+    gallery: {
+      label: "Sacred Space",
+      title: "Our Healing Sanctuary",
+      description:
+        "Step inside our sacred space where ancient wisdom meets divine healing.",
+    },
     contact: {
       label: "Visit Us",
       title: "Begin Your Journey",
       location: "Our Location",
       phone: "Contact Numbers",
       hours: "Working Hours",
-      hoursList: ["Monday - Friday: 9:30 AM - 4:30 PM", "Saturday: 9:30 AM - 1:00 PM", "Sunday: Closed"],
-      mapLink: "Open in Google Maps"
+      hoursList: [
+        "Monday - Friday: 9:30 AM - 4:30 PM",
+        "Saturday: 9:30 AM - 1:00 PM",
+        "Sunday: Closed",
+      ],
+      mapLink: "Open in Google Maps",
     },
     footer: {
       tagline: "Your path to transformation begins here",
@@ -117,116 +172,434 @@ const translations = {
       connect: "Connect With Us",
       whatsapp: "Chat on WhatsApp",
       rights: "All rights reserved.",
-      divineTagline: "Remove obstacles. Transform your life."
+      divineTagline: "Remove obstacles. Transform your life.",
     },
     timing: "Mon-Fri: 9:30 AM - 4:30 PM",
-    theme: { light: "Light Mode", dark: "Dark Mode" }
+    theme: { light: "Light Mode", dark: "Dark Mode" },
   },
   ml: {
-    nav: { home: "ഹോം", about: "ഞങ്ങളെക്കുറിച്ച്", founder: "സ്ഥാപകൻ", services: "സേവനങ്ങൾ", gallery: "ഗാലറി", contact: "ബന്ധപ്പെടുക" },
+    nav: {
+      home: "ഹോം",
+      about: "ഞങ്ങളെക്കുറിച്ച്",
+      founder: "സ്ഥാപകൻ",
+      services: "സേവനങ്ങൾ",
+      gallery: "ഗാലറി",
+      contact: "ബന്ധപ്പെടുക",
+    },
     hero: {
       title: "ആദിവേദ",
       subtitle: "ആൾട്ടർനേറ്റീവ് ഹീലിംഗ് & റിസേർച്ച് സെന്റർ",
-      description: "പുരാതന വേദ ജ്ഞാനവും പരിവർത്തനാത്മക ചികിത്സയും ഒത്തുചേരുന്ന ഒരു പവിത്ര സങ്കേതം. നിങ്ങളുടെ പാതയിൽ നിന്ന് എല്ലാ തടസ്സങ്ങളും നീക്കം ചെയ്യുക.",
+      description:
+        "പുരാതന വേദ ജ്ഞാനവും പരിവർത്തനാത്മക ചികിത്സയും ഒത്തുചേരുന്ന ഒരു പവിത്ര സങ്കേതം. നിങ്ങളുടെ പാതയിൽ നിന്ന് എല്ലാ തടസ്സങ്ങളും നീക്കം ചെയ്യുക.",
       cta1: "നിങ്ങളുടെ പരിവർത്തനം ആരംഭിക്കുക",
       cta2: "സ്ഥാപകനെ കാണുക",
       booking: "കൺസൾട്ടേഷൻ ബുക്ക് ചെയ്യുക",
-      trust: "ദൈവിക മാർഗ്ഗനിർദ്ദേശം തേടുന്ന ആയിരങ്ങൾ വിശ്വസിക്കുന്നു"
+      trust: "ദൈവിക മാർഗ്ഗനിർദ്ദേശം തേടുന്ന ആയിരങ്ങൾ വിശ്വസിക്കുന്നു",
     },
     founder: {
       label: "ദർശനപരമായ നേതാവ്",
       title: "വിഷ്ണു പ്രകാശ്",
       role: "ഡയറക്ടർ, വേദഗുരു ഇന്റർനാഷണൽ",
       role2: "സഹസ്ഥാപകൻ, ട്രൈബാലോസഫി ഇന്റർനാഷണൽ (യൂറോപ്പ്)",
-      description: "വേദ പാരമ്പര്യങ്ങളുടെ പവിത്ര ജ്ഞാനത്തിലൂടെ ജീവിതങ്ങളെ പരിവർത്തനം ചെയ്യാൻ സമർപ്പിതനായ ഒരു പ്രശസ്ത ആത്മീയ ചികിത്സകനും ദർശനപരമായ നേതാവുമാണ്.",
-      quote: "\"എല്ലാ ആത്മാവിനും പരിവർത്തനം ചെയ്യാനുള്ള ശക്തിയുണ്ട്. നിങ്ങളുടെ യഥാർത്ഥ പാതയെ മറയ്ക്കുന്ന തടസ്സങ്ങൾ നീക്കം ചെയ്യാൻ നിങ്ങളെ നയിക്കുക എന്നതാണ് എന്റെ ദൗത്യം.\"",
-      achievements: ["20+ വർഷത്തെ അനുഭവം", "അന്താരാഷ്ട്ര അംഗീകാരം", "ആയിരങ്ങളെ പരിവർത്തനം ചെയ്തു", "വേദ ഗവേഷണ പയനിയർ"]
+      description:
+        "വേദ പാരമ്പര്യങ്ങളുടെ പവിത്ര ജ്ഞാനത്തിലൂടെ ജീവിതങ്ങളെ പരിവർത്തനം ചെയ്യാൻ സമർപ്പിതനായ ഒരു പ്രശസ്ത ആത്മീയ ചികിത്സകനും ദർശനപരമായ നേതാവുമാണ്.",
+      quote:
+        '"എല്ലാ ആത്മാവിനും പരിവർത്തനം ചെയ്യാനുള്ള ശക്തിയുണ്ട്. നിങ്ങളുടെ യഥാർത്ഥ പാതയെ മറയ്ക്കുന്ന തടസ്സങ്ങൾ നീക്കം ചെയ്യാൻ നിങ്ങളെ നയിക്കുക എന്നതാണ് എന്റെ ദൗത്യം."',
+      achievements: [
+        "20+ വർഷത്തെ അനുഭവം",
+        "അന്താരാഷ്ട്ര അംഗീകാരം",
+        "ആയിരങ്ങളെ പരിവർത്തനം ചെയ്തു",
+        "വേദ ഗവേഷണ പയനിയർ",
+      ],
     },
     about: {
       label: "ഞങ്ങളുടെ പൈതൃകം",
       title: "തടസ്സങ്ങൾ നീക്കുക, ജീവിതങ്ങൾ പരിവർത്തനം ചെയ്യുക",
       p1: "ആഴത്തിലുള്ള പരിവർത്തനം തേടുന്നവർക്ക് പ്രതീക്ഷയുടെ വെളിച്ചമായി ആദിവേദ ആൾട്ടർനേറ്റീവ് ഹീലിംഗ് ആൻഡ് റിസേർച്ച് സെന്റർ നിലകൊള്ളുന്നു.",
       p2: "വേദഗുരു പ്രൈവറ്റ് ലിമിറ്റഡിന് കീഴിൽ രജിസ്റ്റർ ചെയ്തിരിക്കുന്ന ഞങ്ങളുടെ സെന്റർ പുരാതന ആത്മീയ പ്രയോഗങ്ങളെ സമഗ്ര ചികിത്സാ രീതികളുമായി സമർത്ഥമായി സമന്വയിപ്പിക്കുന്നു.",
-      features: ["ദൈവിക മാർഗ്ഗദർശനം", "തടസ്സ നിവാരണം", "ജീവിത പരിവർത്തനം", "ആന്തരിക സമാധാനം"]
+      features: [
+        "ദൈവിക മാർഗ്ഗദർശനം",
+        "തടസ്സ നിവാരണം",
+        "ജീവിത പരിവർത്തനം",
+        "ആന്തരിക സമാധാനം",
+      ],
     },
     services: {
       label: "പവിത്ര സേവനങ്ങൾ",
       title: "പരിവർത്തനത്തിലേക്കുള്ള പാതകൾ",
-      description: "തടസ്സങ്ങൾ നീക്കാനും സന്തുലിതാവസ്ഥ പുനഃസ്ഥാപിക്കാനും രൂപകൽപ്പന ചെയ്ത ഞങ്ങളുടെ പവിത്ര ചികിത്സാ പ്രയോഗങ്ങൾ കണ്ടെത്തുക.",
+      description:
+        "തടസ്സങ്ങൾ നീക്കാനും സന്തുലിതാവസ്ഥ പുനഃസ്ഥാപിക്കാനും രൂപകൽപ്പന ചെയ്ത ഞങ്ങളുടെ പവിത്ര ചികിത്സാ പ്രയോഗങ്ങൾ കണ്ടെത്തുക.",
       items: [
-        { title: "താംബൂലരേഖാ ജ്യോതിഷം", titleLocal: "Thambula Rekha Astrology", description: "പുരാതന ഇല വായന ജ്യോതിഷം നിങ്ങളുടെ വിധിയെക്കുറിച്ചുള്ള മറഞ്ഞിരിക്കുന്ന സത്യങ്ങൾ വെളിപ്പെടുത്തുന്നു." },
-        { title: "വേദിക് മൈൻഡ് ഹീലിങ്", titleLocal: "Vedic Mind Healing", description: "ശക്തമായ വേദ ചികിത്സാ സാങ്കേതികവിദ്യകളിലൂടെ മാനസിക തടസ്സങ്ങൾ മോചിപ്പിക്കുക." },
-        { title: "ആത്മീയ കൺസൾട്ടേഷൻ", titleLocal: "Spiritual Consultation", description: "നിങ്ങളുടെ ആത്മീയ യാത്രയ്ക്കായി വ്യക്തിഗതമാക്കിയ മാർഗ്ഗനിർദ്ദേശം സ്വീകരിക്കുക." },
-        { title: "ഹീലിങ് പ്രോഗ്രാംസ്", titleLocal: "Healing Programs", description: "സമ്പൂർണ്ണ ജീവിത പരിവർത്തനത്തിനായി രൂപകൽപ്പന ചെയ്ത ഇഷ്ടാനുസൃത ചികിത്സാ പ്രോഗ്രാമുകൾ." }
+        {
+          title: "താംബൂലരേഖാ ജ്യോതിഷം",
+          titleLocal: "Thambula Rekha Astrology",
+          description:
+            "പുരാതന ഇല വായന ജ്യോതിഷം നിങ്ങളുടെ വിധിയെക്കുറിച്ചുള്ള മറഞ്ഞിരിക്കുന്ന സത്യങ്ങൾ വെളിപ്പെടുത്തുന്നു.",
+        },
+        {
+          title: "വേദിക് മൈൻഡ് ഹീലിങ്",
+          titleLocal: "Vedic Mind Healing",
+          description:
+            "ശക്തമായ വേദ ചികിത്സാ സാങ്കേതികവിദ്യകളിലൂടെ മാനസിക തടസ്സങ്ങൾ മോചിപ്പിക്കുക.",
+        },
+        {
+          title: "ആത്മീയ കൺസൾട്ടേഷൻ",
+          titleLocal: "Spiritual Consultation",
+          description:
+            "നിങ്ങളുടെ ആത്മീയ യാത്രയ്ക്കായി വ്യക്തിഗതമാക്കിയ മാർഗ്ഗനിർദ്ദേശം സ്വീകരിക്കുക.",
+        },
+        {
+          title: "ഹീലിങ് പ്രോഗ്രാംസ്",
+          titleLocal: "Healing Programs",
+          description:
+            "സമ്പൂർണ്ണ ജീവിത പരിവർത്തനത്തിനായി രൂപകൽപ്പന ചെയ്ത ഇഷ്ടാനുസൃത ചികിത്സാ പ്രോഗ്രാമുകൾ.",
+        },
       ],
-      cta: "സേവനങ്ങളെക്കുറിച്ച് അന്വേഷിക്കുക"
+      cta: "സേവനങ്ങളെക്കുറിച്ച് അന്വേഷിക്കുക",
     },
-    gallery: { label: "പവിത്ര സ്ഥലം", title: "ഞങ്ങളുടെ ചികിത്സാ സങ്കേതം", description: "പുരാതന ജ്ഞാനവും ദൈവിക ചികിത്സയും ഒത്തുചേരുന്ന സ്ഥലം." },
+    gallery: {
+      label: "പവിത്ര സ്ഥലം",
+      title: "ഞങ്ങളുടെ ചികിത്സാ സങ്കേതം",
+      description: "പുരാതന ജ്ഞാനവും ദൈവിക ചികിത്സയും ഒത്തുചേരുന്ന സ്ഥലം.",
+    },
     contact: {
       label: "ഞങ്ങളെ സന്ദർശിക്കുക",
       title: "നിങ്ങളുടെ യാത്ര ആരംഭിക്കുക",
       location: "ഞങ്ങളുടെ സ്ഥാനം",
       phone: "ഫോൺ നമ്പരുകൾ",
       hours: "പ്രവർത്തന സമയം",
-      hoursList: ["തിങ്കൾ - വെള്ളി: 9:30 AM - 4:30 PM", "ശനി: 9:30 AM - 1:00 PM", "ഞായർ: അവധി"],
-      mapLink: "Google Maps-ൽ തുറക്കുക"
+      hoursList: [
+        "തിങ്കൾ - വെള്ളി: 9:30 AM - 4:30 PM",
+        "ശനി: 9:30 AM - 1:00 PM",
+        "ഞായർ: അവധി",
+      ],
+      mapLink: "Google Maps-ൽ തുറക്കുക",
     },
-    footer: { tagline: "പരിവർത്തനത്തിലേക്കുള്ള നിങ്ങളുടെ പാത ഇവിടെ ആരംഭിക്കുന്നു", quickLinks: "ക്വിക്ക് ലിങ്കുകൾ", connect: "ഞങ്ങളുമായി ബന്ധപ്പെടുക", whatsapp: "WhatsApp-ൽ ചാറ്റ് ചെയ്യുക", rights: "എല്ലാ അവകാശങ്ങളും സംരക്ഷിതം.", divineTagline: "തടസ്സങ്ങൾ നീക്കുക. നിങ്ങളുടെ ജീവിതം മാറ്റുക." },
+    footer: {
+      tagline: "പരിവർത്തനത്തിലേക്കുള്ള നിങ്ങളുടെ പാത ഇവിടെ ആരംഭിക്കുന്നു",
+      quickLinks: "ക്വിക്ക് ലിങ്കുകൾ",
+      connect: "ഞങ്ങളുമായി ബന്ധപ്പെടുക",
+      whatsapp: "WhatsApp-ൽ ചാറ്റ് ചെയ്യുക",
+      rights: "എല്ലാ അവകാശങ്ങളും സംരക്ഷിതം.",
+      divineTagline: "തടസ്സങ്ങൾ നീക്കുക. നിങ്ങളുടെ ജീവിതം മാറ്റുക.",
+    },
     timing: "തിങ്കൾ-വെള്ളി: 9:30 AM - 4:30 PM",
-    theme: { light: "ലൈറ്റ് മോഡ്", dark: "ഡാർക്ക് മോഡ്" }
+    theme: { light: "ലൈറ്റ് മോഡ്", dark: "ഡാർക്ക് മോഡ്" },
   },
   ta: {
-    nav: { home: "முகப்பு", about: "எங்களை பற்றி", founder: "நிறுவனர்", services: "சேவைகள்", gallery: "கேலரி", contact: "தொடர்பு" },
+    nav: {
+      home: "முகப்பு",
+      about: "எங்களை பற்றி",
+      founder: "நிறுவனர்",
+      services: "சேவைகள்",
+      gallery: "கேலரி",
+      contact: "தொடர்பு",
+    },
     hero: {
       title: "ஆதிவேதா",
       subtitle: "மாற்று சிகிச்சை & ஆராய்ச்சி மையம்",
-      description: "பண்டைய வேத ஞானமும் மாற்றும் சிகிச்சையும் சந்திக்கும் புனித சரணாலயம். உங்கள் பாதையில் இருந்து அனைத்து தடைகளையும் நீக்குங்கள்.",
+      description:
+        "பண்டைய வேத ஞானமும் மாற்றும் சிகிச்சையும் சந்திக்கும் புனித சரணாலயம். உங்கள் பாதையில் இருந்து அனைத்து தடைகளையும் நீக்குங்கள்.",
       cta1: "உங்கள் மாற்றத்தைத் தொடங்குங்கள்",
       cta2: "நிறுவனரைச் சந்தியுங்கள்",
       booking: "ஆலோசனை பதிவு",
-      trust: "தெய்வீக வழிகாட்டுதலை நாடும் ஆயிரக்கணக்கானோரால் நம்பப்படுகிறது"
+      trust: "தெய்வீக வழிகாட்டுதலை நாடும் ஆயிரக்கணக்கானோரால் நம்பப்படுகிறது",
     },
     founder: {
       label: "தொலைநோக்கு தலைவர்",
       title: "விஷ்ணு பிரகாஷ்",
       role: "இயக்குனர், வேதகுரு இன்டர்நேஷனல்",
       role2: "இணை நிறுவனர், ட்ரைபாலோசோபி இன்டர்நேஷனல் (ஐரோப்பா)",
-      description: "வேத மரபுகளின் புனித ஞானத்தின் மூலம் வாழ்க்கையை மாற்றுவதற்கு அர்ப்பணிக்கப்பட்ட புகழ்பெற்ற ஆன்மீக குணப்படுத்துபவர்.",
-      quote: "\"ஒவ்வொரு ஆத்மாவுக்கும் மாற்றும் சக்தி உள்ளது. உங்களுக்குள் இருக்கும் தெய்வீக தீப்பொறியை கண்டறிய உங்களை வழிநடத்துவதே என் நோக்கம்.\"",
-      achievements: ["20+ ஆண்டுகள் அனுபவம்", "சர்வதேச அங்கீகாரம்", "ஆயிரக்கணக்கானோர் மாற்றப்பட்டனர்", "வேத ஆராய்ச்சி முன்னோடி"]
+      description:
+        "வேத மரபுகளின் புனித ஞானத்தின் மூலம் வாழ்க்கையை மாற்றுவதற்கு அர்ப்பணிக்கப்பட்ட புகழ்பெற்ற ஆன்மீக குணப்படுத்துபவர்.",
+      quote:
+        '"ஒவ்வொரு ஆத்மாவுக்கும் மாற்றும் சக்தி உள்ளது. உங்களுக்குள் இருக்கும் தெய்வீக தீப்பொறியை கண்டறிய உங்களை வழிநடத்துவதே என் நோக்கம்."',
+      achievements: [
+        "20+ ஆண்டுகள் அனுபவம்",
+        "சர்வதேச அங்கீகாரம்",
+        "ஆயிரக்கணக்கானோர் மாற்றப்பட்டனர்",
+        "வேத ஆராய்ச்சி முன்னோடி",
+      ],
     },
-    about: { label: "எங்கள் மரபு", title: "தடைகளை நீக்கு, வாழ்க்கைகளை மாற்று", p1: "ஆழமான மாற்றத்தை நாடுபவர்களுக்கு நம்பிக்கையின் கலங்கரை விளக்கமாக ஆதிவேதா நிற்கிறது.", p2: "வேதகுரு பிரைவேட் லிமிடெட் கீழ் பதிவுசெய்யப்பட்டது.", features: ["தெய்வீக வழிகாட்டுதல்", "தடை நீக்கம்", "வாழ்க்கை மாற்றம்", "உள் அமைதி"] },
-    services: { label: "புனித சேவைகள்", title: "மாற்றத்திற்கான பாதைகள்", description: "தடைகளை நீக்க வடிவமைக்கப்பட்ட எங்கள் புனித சிகிச்சை நடைமுறைகளைக் கண்டறியுங்கள்.", items: [{ title: "தாம்பூல ரேகா ஜோதிடம்", titleLocal: "Thambula Rekha", description: "பண்டைய இலை வாசிப்பு ஜோதிடம்." }, { title: "வேத மனம் குணப்படுத்துதல்", titleLocal: "Vedic Mind Healing", description: "மன தடைகளை விடுவியுங்கள்." }, { title: "ஆன்மீக ஆலோசனை", titleLocal: "Spiritual Consultation", description: "தனிப்பயனாக்கப்பட்ட வழிகாட்டுதல்." }, { title: "குணப்படுத்தும் திட்டங்கள்", titleLocal: "Healing Programs", description: "வாழ்க்கை மாற்றத்திற்கான திட்டங்கள்." }], cta: "சேவைகளைப் பற்றி விசாரியுங்கள்" },
-    gallery: { label: "புனித இடம்", title: "எங்கள் சிகிச்சை சரணாலயம்", description: "பண்டைய ஞானம் தெய்வீக சிகிச்சையை சந்திக்கும் இடம்." },
-    contact: { label: "எங்களைச் சந்தியுங்கள்", title: "உங்கள் பயணத்தைத் தொடங்குங்கள்", location: "எங்கள் இருப்பிடம்", phone: "தொடர்பு எண்கள்", hours: "வேலை நேரம்", hoursList: ["திங்கள் - வெள்ளி: 9:30 AM - 4:30 PM", "சனி: 9:30 AM - 1:00 PM", "ஞாயிறு: விடுமுறை"], mapLink: "Google Maps-ல் திறக்கவும்" },
-    footer: { tagline: "மாற்றத்திற்கான உங்கள் பாதை இங்கே தொடங்குகிறது", quickLinks: "விரைவு இணைப்புகள்", connect: "எங்களுடன் இணையுங்கள்", whatsapp: "WhatsApp-ல் அரட்டை", rights: "அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.", divineTagline: "தடைகளை நீக்கு. வாழ்க்கையை மாற்று." },
+    about: {
+      label: "எங்கள் மரபு",
+      title: "தடைகளை நீக்கு, வாழ்க்கைகளை மாற்று",
+      p1: "ஆழமான மாற்றத்தை நாடுபவர்களுக்கு நம்பிக்கையின் கலங்கரை விளக்கமாக ஆதிவேதா நிற்கிறது.",
+      p2: "வேதகுரு பிரைவேட் லிமிடெட் கீழ் பதிவுசெய்யப்பட்டது.",
+      features: [
+        "தெய்வீக வழிகாட்டுதல்",
+        "தடை நீக்கம்",
+        "வாழ்க்கை மாற்றம்",
+        "உள் அமைதி",
+      ],
+    },
+    services: {
+      label: "புனித சேவைகள்",
+      title: "மாற்றத்திற்கான பாதைகள்",
+      description:
+        "தடைகளை நீக்க வடிவமைக்கப்பட்ட எங்கள் புனித சிகிச்சை நடைமுறைகளைக் கண்டறியுங்கள்.",
+      items: [
+        {
+          title: "தாம்பூல ரேகா ஜோதிடம்",
+          titleLocal: "Thambula Rekha",
+          description: "பண்டைய இலை வாசிப்பு ஜோதிடம்.",
+        },
+        {
+          title: "வேத மனம் குணப்படுத்துதல்",
+          titleLocal: "Vedic Mind Healing",
+          description: "மன தடைகளை விடுவியுங்கள்.",
+        },
+        {
+          title: "ஆன்மீக ஆலோசனை",
+          titleLocal: "Spiritual Consultation",
+          description: "தனிப்பயனாக்கப்பட்ட வழிகாட்டுதல்.",
+        },
+        {
+          title: "குணப்படுத்தும் திட்டங்கள்",
+          titleLocal: "Healing Programs",
+          description: "வாழ்க்கை மாற்றத்திற்கான திட்டங்கள்.",
+        },
+      ],
+      cta: "சேவைகளைப் பற்றி விசாரியுங்கள்",
+    },
+    gallery: {
+      label: "புனித இடம்",
+      title: "எங்கள் சிகிச்சை சரணாலயம்",
+      description: "பண்டைய ஞானம் தெய்வீக சிகிச்சையை சந்திக்கும் இடம்.",
+    },
+    contact: {
+      label: "எங்களைச் சந்தியுங்கள்",
+      title: "உங்கள் பயணத்தைத் தொடங்குங்கள்",
+      location: "எங்கள் இருப்பிடம்",
+      phone: "தொடர்பு எண்கள்",
+      hours: "வேலை நேரம்",
+      hoursList: [
+        "திங்கள் - வெள்ளி: 9:30 AM - 4:30 PM",
+        "சனி: 9:30 AM - 1:00 PM",
+        "ஞாயிறு: விடுமுறை",
+      ],
+      mapLink: "Google Maps-ல் திறக்கவும்",
+    },
+    footer: {
+      tagline: "மாற்றத்திற்கான உங்கள் பாதை இங்கே தொடங்குகிறது",
+      quickLinks: "விரைவு இணைப்புகள்",
+      connect: "எங்களுடன் இணையுங்கள்",
+      whatsapp: "WhatsApp-ல் அரட்டை",
+      rights: "அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
+      divineTagline: "தடைகளை நீக்கு. வாழ்க்கையை மாற்று.",
+    },
     timing: "திங்கள்-வெள்ளி: 9:30 AM - 4:30 PM",
-    theme: { light: "ஒளி பயன்முறை", dark: "இருள் பயன்முறை" }
+    theme: { light: "ஒளி பயன்முறை", dark: "இருள் பயன்முறை" },
   },
   kn: {
-    nav: { home: "ಮುಖಪುಟ", about: "ನಮ್ಮ ಬಗ್ಗೆ", founder: "ಸ್ಥಾಪಕ", services: "ಸೇವೆಗಳು", gallery: "ಗ್ಯಾಲರಿ", contact: "ಸಂಪರ್ಕ" },
-    hero: { title: "ಆದಿವೇದ", subtitle: "ಪರ್ಯಾಯ ಗುಣಪಡಿಸುವಿಕೆ & ಸಂಶೋಧನಾ ಕೇಂದ್ರ", description: "ಪ್ರಾಚೀನ ವೈದಿಕ ಜ್ಞಾನ ಮತ್ತು ಪರಿವರ್ತನಾತ್ಮಕ ಗುಣಪಡಿಸುವಿಕೆ ಸಂಧಿಸುವ ಪವಿತ್ರ ಅಭಯಾರಣ್ಯ.", cta1: "ನಿಮ್ಮ ಪರಿವರ್ತನೆಯನ್ನು ಪ್ರಾರಂಭಿಸಿ", cta2: "ಸ್ಥಾಪಕರನ್ನು ಭೇಟಿ ಮಾಡಿ", booking: "ಸಮಾಲೋಚನೆ ಬುಕ್ ಮಾಡಿ", trust: "ದೈವಿಕ ಮಾರ್ಗದರ್ಶನ ಹುಡುಕುತ್ತಿರುವ ಸಾವಿರಾರು ಜನರು ನಂಬುತ್ತಾರೆ" },
-    founder: { label: "ದೂರದೃಷ್ಟಿಯ ನಾಯಕ", title: "ವಿಷ್ಣು ಪ್ರಕಾಶ್", role: "ನಿರ್ದೇಶಕ, ವೇದಗುರು ಇಂಟರ್ನ್ಯಾಷನಲ್", role2: "ಸಹ-ಸಂಸ್ಥಾಪಕ, ಟ್ರೈಬಾಲೋಸೋಫಿ ಇಂಟರ್ನ್ಯಾಷನಲ್ (ಯುರೋಪ್)", description: "ವೈದಿಕ ಸಂಪ್ರದಾಯಗಳ ಪವಿತ್ರ ಜ್ಞಾನದ ಮೂಲಕ ಜೀವನಗಳನ್ನು ಪರಿವರ್ತಿಸಲು ಮೀಸಲಾದ ಪ್ರಸಿದ್ಧ ಆಧ್ಯಾತ್ಮಿಕ ಗುಣಪಡಿಸುವವರು.", quote: "\"ಪ್ರತಿ ಆತ್ಮಕ್ಕೂ ಪರಿವರ್ತಿಸುವ ಶಕ್ತಿ ಇದೆ.\"", achievements: ["20+ ವರ್ಷಗಳ ಅನುಭವ", "ಅಂತರಾಷ್ಟ್ರೀಯ ಮಾನ್ಯತೆ", "ಸಾವಿರಾರು ಪರಿವರ್ತಿತರು", "ವೈದಿಕ ಸಂಶೋಧನೆ ಪ್ರವರ್ತಕ"] },
-    about: { label: "ನಮ್ಮ ಪರಂಪರೆ", title: "ಅಡೆತಡೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ, ಜೀವನಗಳನ್ನು ಪರಿವರ್ತಿಸಿ", p1: "ಆಳವಾದ ಪರಿವರ್ತನೆಯನ್ನು ಹುಡುಕುತ್ತಿರುವವರಿಗೆ ಭರವಸೆಯ ದೀಪಸ್ತಂಭವಾಗಿ ಆದಿವೇದ ನಿಂತಿದೆ.", p2: "ವೇದಗುರು ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್ ಅಡಿಯಲ್ಲಿ ನೋಂದಾಯಿತ.", features: ["ದೈವಿಕ ಮಾರ್ಗದರ್ಶನ", "ಅಡೆತಡೆ ನಿವಾರಣೆ", "ಜೀವನ ಪರಿವರ್ತನೆ", "ಆಂತರಿಕ ಶಾಂತಿ"] },
-    services: { label: "ಪವಿತ್ರ ಸೇವೆಗಳು", title: "ಪರಿವರ್ತನೆಯ ಹಾದಿಗಳು", description: "ಅಡೆತಡೆಗಳನ್ನು ತೆಗೆದುಹಾಕಲು ವಿನ್ಯಾಸಗೊಳಿಸಲಾದ ನಮ್ಮ ಪವಿತ್ರ ಗುಣಪಡಿಸುವ ಅಭ್ಯಾಸಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ.", items: [{ title: "ತಾಂಬೂಲ ರೇಖಾ ಜ್ಯೋತಿಷ್ಯ", titleLocal: "Thambula Rekha", description: "ಪ್ರಾಚೀನ ಎಲೆ ಓದುವ ಜ್ಯೋತಿಷ್ಯ." }, { title: "ವೈದಿಕ ಮನಸ್ಸಿನ ಗುಣಪಡಿಸುವಿಕೆ", titleLocal: "Vedic Mind Healing", description: "ಮಾನಸಿಕ ಅಡೆತಡೆಗಳನ್ನು ಬಿಡುಗಡೆ ಮಾಡಿ." }, { title: "ಆಧ್ಯಾತ್ಮಿಕ ಸಮಾಲೋಚನೆ", titleLocal: "Spiritual Consultation", description: "ವೈಯಕ್ತಿಕ ಮಾರ್ಗದರ್ಶನ." }, { title: "ಗುಣಪಡಿಸುವ ಕಾರ್ಯಕ್ರಮಗಳು", titleLocal: "Healing Programs", description: "ಜೀವನ ಪರಿವರ್ತನೆಗೆ ಕಾರ್ಯಕ್ರಮಗಳು." }], cta: "ಸೇವೆಗಳ ಬಗ್ಗೆ ವಿಚಾರಿಸಿ" },
-    gallery: { label: "ಪವಿತ್ರ ಸ್ಥಳ", title: "ನಮ್ಮ ಗುಣಪಡಿಸುವ ಅಭಯಾರಣ್ಯ", description: "ಪ್ರಾಚೀನ ಜ್ಞಾನ ದೈವಿಕ ಗುಣಪಡಿಸುವಿಕೆಯನ್ನು ಭೇಟಿಯಾಗುವ ಸ್ಥಳ." },
-    contact: { label: "ನಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ", title: "ನಿಮ್ಮ ಪ್ರಯಾಣವನ್ನು ಪ್ರಾರಂಭಿಸಿ", location: "ನಮ್ಮ ಸ್ಥಳ", phone: "ಸಂಪರ್ಕ ಸಂಖ್ಯೆಗಳು", hours: "ಕೆಲಸದ ಸಮಯ", hoursList: ["ಸೋಮ - ಶುಕ್ರ: 9:30 AM - 4:30 PM", "ಶನಿ: 9:30 AM - 1:00 PM", "ಭಾನು: ರಜೆ"], mapLink: "Google Maps ನಲ್ಲಿ ತೆರೆಯಿರಿ" },
-    footer: { tagline: "ಪರಿವರ್ತನೆಗೆ ನಿಮ್ಮ ಹಾದಿ ಇಲ್ಲಿ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ", quickLinks: "ತ್ವರಿತ ಲಿಂಕ್‌ಗಳು", connect: "ನಮ್ಮೊಂದಿಗೆ ಸಂಪರ್ಕಿಸಿ", whatsapp: "WhatsApp ನಲ್ಲಿ ಚಾಟ್ ಮಾಡಿ", rights: "ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.", divineTagline: "ಅಡೆತಡೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ. ಜೀವನವನ್ನು ಪರಿವರ್ತಿಸಿ." },
+    nav: {
+      home: "ಮುಖಪುಟ",
+      about: "ನಮ್ಮ ಬಗ್ಗೆ",
+      founder: "ಸ್ಥಾಪಕ",
+      services: "ಸೇವೆಗಳು",
+      gallery: "ಗ್ಯಾಲರಿ",
+      contact: "ಸಂಪರ್ಕ",
+    },
+    hero: {
+      title: "ಆದಿವೇದ",
+      subtitle: "ಪರ್ಯಾಯ ಗುಣಪಡಿಸುವಿಕೆ & ಸಂಶೋಧನಾ ಕೇಂದ್ರ",
+      description:
+        "ಪ್ರಾಚೀನ ವೈದಿಕ ಜ್ಞಾನ ಮತ್ತು ಪರಿವರ್ತನಾತ್ಮಕ ಗುಣಪಡಿಸುವಿಕೆ ಸಂಧಿಸುವ ಪವಿತ್ರ ಅಭಯಾರಣ್ಯ.",
+      cta1: "ನಿಮ್ಮ ಪರಿವರ್ತನೆಯನ್ನು ಪ್ರಾರಂಭಿಸಿ",
+      cta2: "ಸ್ಥಾಪಕರನ್ನು ಭೇಟಿ ಮಾಡಿ",
+      booking: "ಸಮಾಲೋಚನೆ ಬುಕ್ ಮಾಡಿ",
+      trust: "ದೈವಿಕ ಮಾರ್ಗದರ್ಶನ ಹುಡುಕುತ್ತಿರುವ ಸಾವಿರಾರು ಜನರು ನಂಬುತ್ತಾರೆ",
+    },
+    founder: {
+      label: "ದೂರದೃಷ್ಟಿಯ ನಾಯಕ",
+      title: "ವಿಷ್ಣು ಪ್ರಕಾಶ್",
+      role: "ನಿರ್ದೇಶಕ, ವೇದಗುರು ಇಂಟರ್ನ್ಯಾಷನಲ್",
+      role2: "ಸಹ-ಸಂಸ್ಥಾಪಕ, ಟ್ರೈಬಾಲೋಸೋಫಿ ಇಂಟರ್ನ್ಯಾಷನಲ್ (ಯುರೋಪ್)",
+      description:
+        "ವೈದಿಕ ಸಂಪ್ರದಾಯಗಳ ಪವಿತ್ರ ಜ್ಞಾನದ ಮೂಲಕ ಜೀವನಗಳನ್ನು ಪರಿವರ್ತಿಸಲು ಮೀಸಲಾದ ಪ್ರಸಿದ್ಧ ಆಧ್ಯಾತ್ಮಿಕ ಗುಣಪಡಿಸುವವರು.",
+      quote: '"ಪ್ರತಿ ಆತ್ಮಕ್ಕೂ ಪರಿವರ್ತಿಸುವ ಶಕ್ತಿ ಇದೆ."',
+      achievements: [
+        "20+ ವರ್ಷಗಳ ಅನುಭವ",
+        "ಅಂತರಾಷ್ಟ್ರೀಯ ಮಾನ್ಯತೆ",
+        "ಸಾವಿರಾರು ಪರಿವರ್ತಿತರು",
+        "ವೈದಿಕ ಸಂಶೋಧನೆ ಪ್ರವರ್ತಕ",
+      ],
+    },
+    about: {
+      label: "ನಮ್ಮ ಪರಂಪರೆ",
+      title: "ಅಡೆತಡೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ, ಜೀವನಗಳನ್ನು ಪರಿವರ್ತಿಸಿ",
+      p1: "ಆಳವಾದ ಪರಿವರ್ತನೆಯನ್ನು ಹುಡುಕುತ್ತಿರುವವರಿಗೆ ಭರವಸೆಯ ದೀಪಸ್ತಂಭವಾಗಿ ಆದಿವೇದ ನಿಂತಿದೆ.",
+      p2: "ವೇದಗುರು ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್ ಅಡಿಯಲ್ಲಿ ನೋಂದಾಯಿತ.",
+      features: [
+        "ದೈವಿಕ ಮಾರ್ಗದರ್ಶನ",
+        "ಅಡೆತಡೆ ನಿವಾರಣೆ",
+        "ಜೀವನ ಪರಿವರ್ತನೆ",
+        "ಆಂತರಿಕ ಶಾಂತಿ",
+      ],
+    },
+    services: {
+      label: "ಪವಿತ್ರ ಸೇವೆಗಳು",
+      title: "ಪರಿವರ್ತನೆಯ ಹಾದಿಗಳು",
+      description:
+        "ಅಡೆತಡೆಗಳನ್ನು ತೆಗೆದುಹಾಕಲು ವಿನ್ಯಾಸಗೊಳಿಸಲಾದ ನಮ್ಮ ಪವಿತ್ರ ಗುಣಪಡಿಸುವ ಅಭ್ಯಾಸಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ.",
+      items: [
+        {
+          title: "ತಾಂಬೂಲ ರೇಖಾ ಜ್ಯೋತಿಷ್ಯ",
+          titleLocal: "Thambula Rekha",
+          description: "ಪ್ರಾಚೀನ ಎಲೆ ಓದುವ ಜ್ಯೋತಿಷ್ಯ.",
+        },
+        {
+          title: "ವೈದಿಕ ಮನಸ್ಸಿನ ಗುಣಪಡಿಸುವಿಕೆ",
+          titleLocal: "Vedic Mind Healing",
+          description: "ಮಾನಸಿಕ ಅಡೆತಡೆಗಳನ್ನು ಬಿಡುಗಡೆ ಮಾಡಿ.",
+        },
+        {
+          title: "ಆಧ್ಯಾತ್ಮಿಕ ಸಮಾಲೋಚನೆ",
+          titleLocal: "Spiritual Consultation",
+          description: "ವೈಯಕ್ತಿಕ ಮಾರ್ಗದರ್ಶನ.",
+        },
+        {
+          title: "ಗುಣಪಡಿಸುವ ಕಾರ್ಯಕ್ರಮಗಳು",
+          titleLocal: "Healing Programs",
+          description: "ಜೀವನ ಪರಿವರ್ತನೆಗೆ ಕಾರ್ಯಕ್ರಮಗಳು.",
+        },
+      ],
+      cta: "ಸೇವೆಗಳ ಬಗ್ಗೆ ವಿಚಾರಿಸಿ",
+    },
+    gallery: {
+      label: "ಪವಿತ್ರ ಸ್ಥಳ",
+      title: "ನಮ್ಮ ಗುಣಪಡಿಸುವ ಅಭಯಾರಣ್ಯ",
+      description: "ಪ್ರಾಚೀನ ಜ್ಞಾನ ದೈವಿಕ ಗುಣಪಡಿಸುವಿಕೆಯನ್ನು ಭೇಟಿಯಾಗುವ ಸ್ಥಳ.",
+    },
+    contact: {
+      label: "ನಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ",
+      title: "ನಿಮ್ಮ ಪ್ರಯಾಣವನ್ನು ಪ್ರಾರಂಭಿಸಿ",
+      location: "ನಮ್ಮ ಸ್ಥಳ",
+      phone: "ಸಂಪರ್ಕ ಸಂಖ್ಯೆಗಳು",
+      hours: "ಕೆಲಸದ ಸಮಯ",
+      hoursList: [
+        "ಸೋಮ - ಶುಕ್ರ: 9:30 AM - 4:30 PM",
+        "ಶನಿ: 9:30 AM - 1:00 PM",
+        "ಭಾನು: ರಜೆ",
+      ],
+      mapLink: "Google Maps ನಲ್ಲಿ ತೆರೆಯಿರಿ",
+    },
+    footer: {
+      tagline: "ಪರಿವರ್ತನೆಗೆ ನಿಮ್ಮ ಹಾದಿ ಇಲ್ಲಿ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ",
+      quickLinks: "ತ್ವರಿತ ಲಿಂಕ್‌ಗಳು",
+      connect: "ನಮ್ಮೊಂದಿಗೆ ಸಂಪರ್ಕಿಸಿ",
+      whatsapp: "WhatsApp ನಲ್ಲಿ ಚಾಟ್ ಮಾಡಿ",
+      rights: "ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.",
+      divineTagline: "ಅಡೆತಡೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ. ಜೀವನವನ್ನು ಪರಿವರ್ತಿಸಿ.",
+    },
     timing: "ಸೋಮ-ಶುಕ್ರ: 9:30 AM - 4:30 PM",
-    theme: { light: "ಬೆಳಕಿನ ಮೋಡ್", dark: "ಕತ್ತಲೆ ಮೋಡ್" }
+    theme: { light: "ಬೆಳಕಿನ ಮೋಡ್", dark: "ಕತ್ತಲೆ ಮೋಡ್" },
   },
   it: {
-    nav: { home: "Home", about: "Chi Siamo", founder: "Fondatore", services: "Servizi", gallery: "Galleria", contact: "Contatti" },
-    hero: { title: "Adhiveda", subtitle: "Centro di Guarigione Alternativa e Ricerca", description: "Un santuario sacro dove l'antica saggezza vedica incontra la guarigione trasformativa. Rimuovi tutti gli ostacoli dal tuo cammino e abbraccia il viaggio divino.", cta1: "Inizia la Tua Trasformazione", cta2: "Incontra il Fondatore", booking: "Prenota Consulenza", trust: "Fidato da migliaia che cercano la guida divina" },
-    founder: { label: "Leader Visionario", title: "Vishnu Prakash", role: "Direttore, Vedaguru International", role2: "Co-Fondatore, Tribalosophy International (Europa)", description: "Un rinomato guaritore spirituale e leader visionario dedicato a trasformare vite attraverso la sacra saggezza delle tradizioni vediche.", quote: "\"Ogni anima ha il potere di trasformarsi. La mia missione è guidarti nella scoperta di quella scintilla divina dentro di te.\"", achievements: ["20+ Anni di Esperienza", "Riconoscimento Internazionale", "Migliaia Trasformati", "Pioniere della Ricerca Vedica"] },
-    about: { label: "La Nostra Eredità", title: "Rimuovi Ostacoli, Trasforma Vite", p1: "Il Centro Adhiveda è un faro di speranza per chi cerca una profonda trasformazione.", p2: "Registrato sotto Vedaguru Pvt. Ltd.", features: ["Guida Divina", "Rimozione Ostacoli", "Trasformazione della Vita", "Pace Interiore"] },
-    services: { label: "Servizi Sacri", title: "Percorsi di Trasformazione", description: "Scopri le nostre pratiche sacre progettate per rimuovere ostacoli e trasformare la tua vita.", items: [{ title: "Astrologia Thambula Rekha", titleLocal: "താംബൂലരേഖാ ജ്യോതിഷം", description: "L'antica astrologia della lettura delle foglie." }, { title: "Guarigione Mentale Vedica", titleLocal: "വേദിക് മൈൻഡ് ഹീലിങ്", description: "Rilascia blocchi mentali." }, { title: "Consultazione Spirituale", titleLocal: "ആത്മീയ കൺസൾട്ടേഷൻ", description: "Guida personalizzata." }, { title: "Programmi di Guarigione", titleLocal: "ഹീലിങ് പ്രോഗ്രാംസ്", description: "Programmi per la trasformazione della vita." }], cta: "Richiedi Informazioni" },
-    gallery: { label: "Spazio Sacro", title: "Il Nostro Santuario", description: "Entra nel nostro spazio sacro." },
-    contact: { label: "Visitaci", title: "Inizia il Tuo Viaggio", location: "La Nostra Posizione", phone: "Numeri di Contatto", hours: "Orari", hoursList: ["Lunedì - Venerdì: 9:30 - 16:30", "Sabato: 9:30 - 13:00", "Domenica: Chiuso"], mapLink: "Apri in Google Maps" },
-    footer: { tagline: "Il tuo percorso inizia qui", quickLinks: "Link Rapidi", connect: "Connettiti Con Noi", whatsapp: "Chatta su WhatsApp", rights: "Tutti i diritti riservati.", divineTagline: "Rimuovi ostacoli. Trasforma la tua vita." },
+    nav: {
+      home: "Home",
+      about: "Chi Siamo",
+      founder: "Fondatore",
+      services: "Servizi",
+      gallery: "Galleria",
+      contact: "Contatti",
+    },
+    hero: {
+      title: "Adhiveda",
+      subtitle: "Centro di Guarigione Alternativa e Ricerca",
+      description:
+        "Un santuario sacro dove l'antica saggezza vedica incontra la guarigione trasformativa. Rimuovi tutti gli ostacoli dal tuo cammino e abbraccia il viaggio divino.",
+      cta1: "Inizia la Tua Trasformazione",
+      cta2: "Incontra il Fondatore",
+      booking: "Prenota Consulenza",
+      trust: "Fidato da migliaia che cercano la guida divina",
+    },
+    founder: {
+      label: "Leader Visionario",
+      title: "Vishnu Prakash",
+      role: "Direttore, Vedaguru International",
+      role2: "Co-Fondatore, Tribalosophy International (Europa)",
+      description:
+        "Un rinomato guaritore spirituale e leader visionario dedicato a trasformare vite attraverso la sacra saggezza delle tradizioni vediche.",
+      quote:
+        '"Ogni anima ha il potere di trasformarsi. La mia missione è guidarti nella scoperta di quella scintilla divina dentro di te."',
+      achievements: [
+        "20+ Anni di Esperienza",
+        "Riconoscimento Internazionale",
+        "Migliaia Trasformati",
+        "Pioniere della Ricerca Vedica",
+      ],
+    },
+    about: {
+      label: "La Nostra Eredità",
+      title: "Rimuovi Ostacoli, Trasforma Vite",
+      p1: "Il Centro Adhiveda è un faro di speranza per chi cerca una profonda trasformazione.",
+      p2: "Registrato sotto Vedaguru Pvt. Ltd.",
+      features: [
+        "Guida Divina",
+        "Rimozione Ostacoli",
+        "Trasformazione della Vita",
+        "Pace Interiore",
+      ],
+    },
+    services: {
+      label: "Servizi Sacri",
+      title: "Percorsi di Trasformazione",
+      description:
+        "Scopri le nostre pratiche sacre progettate per rimuovere ostacoli e trasformare la tua vita.",
+      items: [
+        {
+          title: "Astrologia Thambula Rekha",
+          titleLocal: "താംബൂലരേഖാ ജ്യോതിഷം",
+          description: "L'antica astrologia della lettura delle foglie.",
+        },
+        {
+          title: "Guarigione Mentale Vedica",
+          titleLocal: "വേദിക് മൈൻഡ് ഹീലിങ്",
+          description: "Rilascia blocchi mentali.",
+        },
+        {
+          title: "Consultazione Spirituale",
+          titleLocal: "ആത്മീയ കൺസൾട്ടേഷൻ",
+          description: "Guida personalizzata.",
+        },
+        {
+          title: "Programmi di Guarigione",
+          titleLocal: "ഹീലിങ് പ്രോഗ്രാംസ്",
+          description: "Programmi per la trasformazione della vita.",
+        },
+      ],
+      cta: "Richiedi Informazioni",
+    },
+    gallery: {
+      label: "Spazio Sacro",
+      title: "Il Nostro Santuario",
+      description: "Entra nel nostro spazio sacro.",
+    },
+    contact: {
+      label: "Visitaci",
+      title: "Inizia il Tuo Viaggio",
+      location: "La Nostra Posizione",
+      phone: "Numeri di Contatto",
+      hours: "Orari",
+      hoursList: [
+        "Lunedì - Venerdì: 9:30 - 16:30",
+        "Sabato: 9:30 - 13:00",
+        "Domenica: Chiuso",
+      ],
+      mapLink: "Apri in Google Maps",
+    },
+    footer: {
+      tagline: "Il tuo percorso inizia qui",
+      quickLinks: "Link Rapidi",
+      connect: "Connettiti Con Noi",
+      whatsapp: "Chatta su WhatsApp",
+      rights: "Tutti i diritti riservati.",
+      divineTagline: "Rimuovi ostacoli. Trasforma la tua vita.",
+    },
     timing: "Lun-Ven: 9:30 - 16:30",
-    theme: { light: "Modalità Chiara", dark: "Modalità Scura" }
-  }
+    theme: { light: "Modalità Chiara", dark: "Modalità Scura" },
+  },
 };
 
 const languages = [
@@ -486,13 +859,21 @@ const HeroSection = () => {
   const { isDark } = useTheme();
 
   return (
-    <section id="hero" data-testid="hero-section" className={`min-h-screen flex items-center relative pt-5 overflow-hidden ${isDark ? 'bg-cosmic' : 'bg-cream'}`}>
+    <section
+      id="hero"
+      data-testid="hero-section"
+      className={`min-h-screen flex items-center relative pt-5 overflow-hidden ${isDark ? "bg-cosmic" : "bg-cream"}`}
+    >
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className={`absolute top-20 right-0 w-96 h-96 rounded-full blur-3xl ${isDark ? 'bg-gold/5' : 'bg-gold/10'}`} />
-        <div className={`absolute bottom-20 left-0 w-80 h-80 rounded-full blur-3xl ${isDark ? 'bg-saffron/5' : 'bg-saffron/10'}`} />
+        <div
+          className={`absolute top-20 right-0 w-96 h-96 rounded-full blur-3xl ${isDark ? "bg-gold/5" : "bg-gold/10"}`}
+        />
+        <div
+          className={`absolute bottom-20 left-0 w-80 h-80 rounded-full blur-3xl ${isDark ? "bg-saffron/5" : "bg-saffron/10"}`}
+        />
       </div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-16 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Content */}
@@ -509,22 +890,32 @@ const HeroSection = () => {
               transition={{ delay: 0.2 }}
               className="flex items-center gap-3 mb-6 justify-center lg:justify-start"
             >
-              <img src={ADHIVEDA_FOUNDATION_LOGO} alt="Adhiveda Foundation" className="h-10 w-auto" />
+              <img
+                src={ADHIVEDA_FOUNDATION_LOGO}
+                alt="Adhiveda Foundation"
+                className="h-10 w-auto"
+              />
             </motion.div>
 
-            <h1 className={`font-cormorant text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-4 ${isDark ? 'text-cream' : 'text-saffron'}`}>
+            <h1
+              className={`font-cormorant text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-4 ${isDark ? "text-cream" : "text-saffron"}`}
+            >
               {t.hero.title}
             </h1>
             <h2 className="font-cormorant text-xl sm:text-2xl lg:text-3xl text-gold mb-6 italic">
               {t.hero.subtitle}
             </h2>
-            
-            <p className={`font-manrope text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0 ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
+
+            <p
+              className={`font-manrope text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0 ${isDark ? "text-gray-300" : "text-gray-700"}`}
+            >
               {t.hero.description}
             </p>
 
             {/* Trust Badge */}
-            <div className={`flex items-center gap-2 mb-8 justify-center lg:justify-start ${isDark ? 'text-gold/80' : 'text-saffron/80'}`}>
+            <div
+              className={`flex items-center gap-2 mb-8 justify-center lg:justify-start ${isDark ? "text-gold/80" : "text-saffron/80"}`}
+            >
               <Shield className="w-5 h-5" />
               <span className="font-manrope text-sm">{t.hero.trust}</span>
             </div>
@@ -532,7 +923,12 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
                 data-testid="hero-cta-primary"
-                onClick={() => window.open(`https://wa.me/${CONTACT.whatsapp}?text=Hello%2C%20I%20would%20like%20to%20begin%20my%20transformation%20journey%20with%20Adhiveda.`, '_blank')}
+                onClick={() =>
+                  window.open(
+                    `https://wa.me/${CONTACT.whatsapp}?text=Hello%2C%20I%20would%20like%20to%20begin%20my%20transformation%20journey%20with%20Adhiveda.`,
+                    "_blank",
+                  )
+                }
                 className="bg-saffron hover:bg-saffron-hover text-cream px-8 py-6 text-base font-manrope"
               >
                 {t.hero.cta1}
@@ -541,16 +937,25 @@ const HeroSection = () => {
               <Button
                 data-testid="hero-cta-secondary"
                 variant="outline"
-                onClick={() => document.getElementById('founder').scrollIntoView({ behavior: 'smooth' })}
-                className={`px-8 py-6 ${isDark ? 'border-gold text-gold hover:bg-gold hover:text-cosmic' : 'border-gold text-saffron hover:bg-gold hover:text-white'}`}
+                onClick={() =>
+                  document
+                    .getElementById("founder")
+                    .scrollIntoView({ behavior: "smooth" })
+                }
+                className={`px-8 py-6 ${isDark ? "border-gold text-gold hover:bg-gold hover:text-cosmic" : "border-gold text-saffron hover:bg-gold hover:text-white"}`}
               >
                 {t.hero.cta2}
               </Button>
             </div>
 
             {/* Contact Info */}
-            <div className={`mt-8 flex flex-wrap gap-4 justify-center lg:justify-start text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-              <a href={`tel:${CONTACT.phone1.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:text-gold">
+            <div
+              className={`mt-8 flex flex-wrap gap-4 justify-center lg:justify-start text-sm ${isDark ? "text-gray-400" : "text-gray-600"}`}
+            >
+              <a
+                href={`tel:${CONTACT.phone1.replace(/\s/g, "")}`}
+                className="flex items-center gap-2 hover:text-gold"
+              >
                 <Phone className="w-4 h-4" />
                 <span className="font-manrope">{CONTACT.phone1}</span>
               </a>
@@ -561,38 +966,52 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* Vishnu Prakash Image */}
+          {/* Vishnu Prakash Image + Spiral Background */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex justify-center order-2 lg:order-2"
+            className="flex justify-center order-2 lg:order-2 relative"
           >
             <div className="relative">
+              <div className="absolute  -top-16  sm:-right-56 -right-36  lg:-top-32 lg:-right-64 w-72 h-72 lg:w-96 lg:h-96 pointer-events-none z-0">
+                <img
+                  src="/images/Chakra.webp"
+                  alt=""
+                  className="w-full h-full object-cover rounded-full opacity-40 mix-blend-soft-light"
+                  style={{
+                    maskImage:
+                      "radial-gradient(circle at 50% 50%, white 30%, transparent 90%)",
+                    WebkitMaskImage:
+                      "radial-gradient(circle at 50% 50%, white 30%, transparent 70%)",
+                  }}
+                />
+              </div>
+
               {/* Glow Effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-gold/30 to-saffron/20 rounded-full blur-3xl scale-110" />
-              
+
               {/* Main Image */}
-              <div className="relative">
-                <img 
+              <div className="relative z-10">
+                <img
                   src={VISHNU_PRAKASH_1}
                   alt="Vishnu Prakash - Founder"
                   className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl border-4 border-gold/40"
                 />
-                
-                {/* Decorative Ring */}
+
                 <div className="absolute inset-0 rounded-full border-2 border-gold/20 scale-110" />
                 <div className="absolute inset-0 rounded-full border border-gold/10 scale-125" />
               </div>
-              
-              {/* Badge */}
+
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
-                className={`absolute -bottom-4 left-1/2 -translate-x-1/2 px-6 py-3 rounded-full shadow-lg border border-gold/30 ${isDark ? 'bg-cosmic' : 'bg-white'}`}
+                className={`absolute -bottom-4 left-1/2 -translate-x-1/2 px-6 py-3 rounded-full shadow-lg border border-gold/30 z-20 ${isDark ? "bg-cosmic" : "bg-white"}`}
               >
-                <p className="font-cormorant text-lg font-semibold text-gold whitespace-nowrap">Vishnu Prakash</p>
+                <p className="font-cormorant text-lg font-semibold text-gold whitespace-nowrap">
+                  Vishnu Prakash
+                </p>
               </motion.div>
             </div>
           </motion.div>
@@ -608,11 +1027,15 @@ const FounderSection = () => {
   const { isDark } = useTheme();
 
   return (
-    <section id="founder" data-testid="founder-section" className={`py-8 md:py-8 relative overflow-hidden ${isDark ? 'bg-cosmic-dark' : 'bg-white'}`}>
+    <section
+      id="founder"
+      data-testid="founder-section"
+      className={`py-8 md:py-8 relative overflow-hidden ${isDark ? "bg-cosmic-dark" : "bg-white"}`}
+    >
       <div className="absolute inset-0 opacity-5">
         <div className="lotus-pattern absolute inset-0" />
       </div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -620,13 +1043,17 @@ const FounderSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-gold font-manrope text-sm uppercase tracking-widest">{t.founder.label}</span>
-          <h2 className={`font-cormorant text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 section-title ${isDark ? 'text-cream' : 'text-saffron'}`}>
+          <span className="text-gold font-manrope text-sm uppercase tracking-widest">
+            {t.founder.label}
+          </span>
+          <h2
+            className={`font-cormorant text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 section-title ${isDark ? "text-cream" : "text-saffron"}`}
+          >
             {t.founder.title}
           </h2>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 ">
           {/* Image Side */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -635,14 +1062,14 @@ const FounderSection = () => {
             className="relative"
           >
             <div className="relative">
-              <img 
+              <img
                 src={VISHNU_PRAKASH_2}
                 alt="Vishnu Prakash"
                 className="w-full max-w-md mx-auto rounded-2xl shadow-card object-cover"
               />
               <div className="absolute inset-0 rounded-2xl border-2 border-gold/20" />
             </div>
-            
+
             {/* Achievements */}
             <div className="grid grid-cols-2 gap-4 mt-6 max-w-md mx-auto">
               {t.founder.achievements.map((achievement, index) => {
@@ -655,10 +1082,14 @@ const FounderSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className={`flex items-center gap-2 p-3 rounded-xl border border-gold/20 ${isDark ? 'bg-cosmic' : 'bg-cream'}`}
+                    className={`flex items-center gap-2 p-3 rounded-xl border border-gold/20 ${isDark ? "bg-cosmic" : "bg-cream"}`}
                   >
                     <Icon className="w-4 h-4 text-gold flex-shrink-0" />
-                    <span className={`font-manrope text-xs ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>{achievement}</span>
+                    <span
+                      className={`font-manrope text-xs ${isDark ? "text-gray-300" : "text-gray-700"}`}
+                    >
+                      {achievement}
+                    </span>
                   </motion.div>
                 );
               })}
@@ -672,25 +1103,60 @@ const FounderSection = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <div>
-              <h3 className={`font-cormorant text-2xl font-semibold ${isDark ? 'text-gold' : 'text-saffron'}`}>{t.founder.role}</h3>
-              <p className={`font-manrope text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>{t.founder.role2}</p>
+            <div className="space-y-4 sm:space-y-5">
+              <h3
+                className={`font-cormorant text-xl sm:text-2xl lg:text-3xl font-semibold tracking-tight ${isDark ? "text-gold" : "text-saffron"}`}
+              >
+                {t.founder.role}
+              </h3>
+              {t.founder.roles?.length > 0 && (
+                <div className="flex flex-wrap gap-2 gap-y-2.5 mt-2 sm:mt-3">
+                  {t.founder.roles.map((extraRole) => (
+                    <span
+                      key={extraRole}
+                      className={`
+            inline-flex items-center px-3 py-1 text-xs sm:text-sm 
+            rounded-full border border-gold/30 
+            font-manrope font-medium
+            ${
+              isDark
+                ? "bg-cosmic/60 text-gold/85 backdrop-blur-sm"
+                : "bg-cream/80 text-saffron/90"
+            }
+          `}
+                    >
+                      {extraRole}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
-            
-            <p className={`font-manrope leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
+
+            <p
+              className={`font-manrope leading-relaxed ${isDark ? "text-gray-300" : "text-gray-700"}`}
+            >
               {t.founder.description}
             </p>
-            
+
             {/* Quote */}
-            <div className={`p-6 rounded-2xl border-l-4 border-gold ${isDark ? 'bg-cosmic' : 'bg-cream'}`}>
-              <p className={`font-cormorant text-lg italic leading-relaxed ${isDark ? 'text-cream' : 'text-saffron'}`}>
+            <div
+              className={`p-6 rounded-2xl border-l-4 border-gold ${isDark ? "bg-cosmic" : "bg-cream"}`}
+            >
+              <p
+                className={`font-cormorant text-lg italic leading-relaxed ${isDark ? "text-cream" : "text-saffron"}`}
+              >
                 {t.founder.quote}
               </p>
             </div>
 
             <Button
               data-testid="founder-cta"
-              onClick={() => window.open(`https://wa.me/${CONTACT.whatsapp}?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20consultation%20with%20Vishnu%20Prakash.`, '_blank')}
+              onClick={() =>
+                window.open(
+                  `https://wa.me/${CONTACT.whatsapp}?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20consultation%20with%20Vishnu%20Prakash.`,
+                  "_blank",
+                )
+              }
               className="bg-saffron hover:bg-saffron-hover text-cream font-manrope"
             >
               Schedule Personal Consultation
@@ -759,12 +1225,12 @@ const AboutSection = () => {
                       isDark ? "text-gray-300" : "text-saffron"
                     }`}
                   >
-                    Adhiveda Foundation
+                    Adhiveda Alternative Healing & Research Center
                   </p>
                   <p
                     className={`font-manrope text-xs ${isDark ? "text-gray-400" : "text-gray-600"}`}
                   >
-                    Registered under Vedaguru Pvt. Ltd.
+                    Registered under Adhiveda Foundation.
                   </p>
                 </div>
               </div>
@@ -939,7 +1405,7 @@ const GallerySection = () => {
                 alt={`Adhiveda Gallery ${index + 1}`}
                 className={`w-full object-cover transition-transform duration-500 group-hover:scale-105 ${index === 0 ? 'h-[350px]' : 'h-[170px]'}`}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-saffron/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-saffron/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </motion.div>
           ))}
         </div>
