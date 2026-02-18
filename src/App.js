@@ -920,20 +920,29 @@ const HeroSection = () => {
               <span className="font-manrope text-sm">{t.hero.trust}</span>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button
-                data-testid="hero-cta-primary"
-                onClick={() =>
-                  window.open(
-                    `https://wa.me/${CONTACT.whatsapp}?text=Hello%2C%20I%20would%20like%20to%20begin%20my%20transformation%20journey%20with%20Adhiveda.`,
-                    "_blank",
-                  )
-                }
-                className="bg-saffron hover:bg-saffron-hover text-cream px-8 py-6 text-base font-manrope"
-              >
-                {t.hero.cta1}
-                <ChevronRight className="w-5 h-5 ml-2" />
-              </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center sm:items-start">
+              <div className="text-center sm:text-left">
+                <Button
+                  data-testid="hero-cta-primary"
+                  onClick={() =>
+                    window.open(
+                      `https://wa.me/${CONTACT.whatsapp}?text=Hello%2C%20I%20would%20like%20to%20begin%20my%20transformation%20journey%20with%20Adhiveda.`,
+                      "_blank",
+                    )
+                  }
+                  className="bg-saffron hover:bg-saffron-hover text-cream px-8 py-6 text-base font-manrope"
+                >
+                  {t.hero.cta1}
+                  <ChevronRight className="w-5 h-5 ml-2" />
+                </Button>
+
+                <p
+                  className={`mt-3 text-xs sm:text-sm ${isDark ? "text-gold/70" : "text-saffron/70"} font-manrope`}
+                >
+                  Pre-booking required for personal consultations
+                </p>
+              </div>
+
               <Button
                 data-testid="hero-cta-secondary"
                 variant="outline"
@@ -950,7 +959,7 @@ const HeroSection = () => {
 
             {/* Contact Info */}
             <div
-              className={`mt-8 flex flex-wrap gap-4 justify-center lg:justify-start text-sm ${isDark ? "text-gray-400" : "text-gray-600"}`}
+              className={`mt-5 flex flex-wrap gap-4 justify-center lg:justify-start text-sm ${isDark ? "text-gray-400" : "text-gray-600"}`}
             >
               <a
                 href={`tel:${CONTACT.phone1.replace(/\s/g, "")}`}
@@ -963,6 +972,7 @@ const HeroSection = () => {
                 <Clock className="w-4 h-4" />
                 <span className="font-manrope">{t.timing}</span>
               </div>
+        
             </div>
           </motion.div>
 
@@ -974,7 +984,7 @@ const HeroSection = () => {
             className="flex justify-center order-2 lg:order-2 relative"
           >
             <div className="relative">
-              <div className="absolute  -top-16  sm:-right-56 -right-36  lg:-top-32 lg:-right-64 w-72 h-72 lg:w-96 lg:h-96 pointer-events-none z-0">
+              <div className="absolute  -top-16  sm:-right-56 -right-36  lg:-top-32 lg:-right-64 xl:-right-72 2xl:-right-80  w-52 h-52 sm:w-72 sm:h-72 lg:w-96 lg:h-96 pointer-events-none z-0">
                 <img
                   src="/images/Chakra.webp"
                   alt=""
@@ -996,7 +1006,7 @@ const HeroSection = () => {
                 <img
                   src={VISHNU_PRAKASH_1}
                   alt="Vishnu Prakash - Founder"
-                  className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl border-4 border-gold/40"
+                  className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl border-4 border-gold/40"
                 />
 
                 <div className="absolute inset-0 rounded-full border-2 border-gold/20 scale-110" />
